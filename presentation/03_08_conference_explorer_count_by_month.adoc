@@ -1,0 +1,42 @@
+=== Count Conferences by `Month`
+
+---
+
+[cols="15a,85a"]
+|====
+| link:../code/native_java/src/test/java/ConferenceExplorerTest.java[Java Streams]
+|
+[source,java,linenums,highlight=2..4]
+----
+public Map<Month, Long> countByMonth() {
+    return this.conferences.stream()
+            .collect(Collectors.groupingBy(Conference::getMonth,
+                    Collectors.counting()));
+}
+----
+| link:../code/eclipse_collections/src/test/java/ConferenceExplorerTest.java[Eclipse Collections]
+|
+[source,java,linenums,highlight=2..2]
+----
+public Bag<Month> countByMonth() {
+    return this.conferences.countBy(Conference::getMonth);
+}
+----
+| link:../code/dataframe-ec/src/test/java/ConferenceExplorerTest.java[DataFrame-EC]
+|
+[source,java,linenums,highlight=2..5]
+----
+public DataFrame countByMonth() {
+    return this.conferences.aggregateBy(
+            Lists.immutable.with(
+                    AggregateFunction.count("Month", "MonthCount")),
+            Lists.immutable.with("Month"));
+}
+----
+|====
+
+link:toc.adoc[⬆️ TOC] /
+link:./03_07_conference_explorer_count_by_country.adoc[⬅️ ConferenceExplorer - Count by Country] /
+link:./03_09_conference_explorer_sum_by.adoc[➡️ ConferenceExplorer - Sum conference days by Country] 🐢
+
+

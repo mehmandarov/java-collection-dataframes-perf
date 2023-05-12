@@ -1,0 +1,21 @@
+=== DataFrame-EC
+
+---
+
+[cols="a"]
+|====
+|*Pros*
+| * Rich and concise API
+* Built-in support for CSV
+* Flexibility - no need to define a data structure/type and everything can be purely dynamic
+* Built-in DSL
+* Eclipse Collections is a dependency so its collections are available to use
+* Open Source with helpful and active maintainer
+|*Cons*
+| * Multiple Third-party dependencies
+* Minimal available skilled resources
+* Less mature and evolved compared to Java alternatives, like TableSaw
+
+link:toc.adoc[⬆️ TOC] /
+link:./05_eclipse_collections.adoc[⬅️ Eclipse Collections] /
+link:./07_summary.adoc[➡️ Summary] 🥷

@@ -1,0 +1,20 @@
+=== The Problem
+
+---
+
+* We have data that needs to be processed.
+** Conference data, of course!
+* Can we do that in Java in an efficient way?
+** Yes? How?
+* What options do we have? Some examples:
+** Java Streams
+*** Part of Java standard library
+** link:https://github.com/eclipse/eclipse-collections[Eclipse Collections]
+*** Open Source library maintained at Eclipse Foundation
+** link:https://github.com/vmzakharov/dataframe-ec[DataFrame-EC]
+*** Open Source library created by Vladimir Zakharov
+
+
+link:toc.adoc[⬆️ TOC] /
+link:./01_intro.adoc[⬅️ Intro] /
+link:./02_02_the_problem_csv_data_to_load.adoc[➡️ CSV Data to Load] 🥷

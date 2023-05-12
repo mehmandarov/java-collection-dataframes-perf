@@ -1,0 +1,40 @@
+=== Group Conferences by `Country`
+
+---
+
+[cols="15a,85a"]
+|====
+| link:../code/native_java/src/test/java/ConferenceExplorerTest.java[Java Streams]
+|
+[source,java,linenums,highlight=2..4]
+----
+public Map<Country, Set<Conference>> groupByCountry() {
+    return this.conferences.stream()
+            .collect(Collectors.groupingBy(Conference::country,
+                    Collectors.toUnmodifiableSet()));
+}
+----
+| link:../code/eclipse_collections/src/test/java/ConferenceExplorerTest.java[Eclipse Collections]
+|
+[source,java,linenums,highlight=2..2]
+----
+public ImmutableSetMultimap<Country, Conference> groupByCountry() {
+    return this.conferences.groupBy(Conference::country);
+}
+----
+| link:../code/dataframe-ec/src/test/java/ConferenceExplorerTest.java[DataFrame-EC]
+|
+[source,java,linenums,highlight=2..4]
+----
+public DfIndex groupByCountry() {
+    this.conferences.createIndex(
+            "Country", Lists.immutable.of("Country"));
+    return this.conferences.index("Country");
+}
+----
+|====
+
+link:toc.adoc[⬆️ TOC] /
+link:./03_04_conference_explorer_sort_by.adoc[⬅️ ConferenceExplorer - Sort by Days to Event] /
+link:./03_06_conference_explorer_group_by_city.adoc[➡️ ConferenceExplorer - Group by City] 🐢
+

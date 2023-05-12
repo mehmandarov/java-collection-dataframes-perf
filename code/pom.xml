@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>collection.dataframes</groupId>
+    <artifactId>java-collection-dataframes-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <name>Java Collection Dataframes</name>
+
+    <description>Source code for talk on Java Collections and Dataframes</description>
+
+    <url>https://github.com/mehmandarov/java-collection-dataframes</url>
+
+    <developers>
+        <developer>
+            <name>Rustam Mehmandarov</name>
+        </developer>
+
+        <developer>
+            <name>Donald Raab</name>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>dataframe-ec</module>
+        <module>eclipse_collections</module>
+        <module>native_java</module>
+    </modules>
+
+    <properties>
+        <eclipse.collections.version>11.1.0</eclipse.collections.version>
+        <jackson.version>2.14.2</jackson.version>
+        <dataframe.ec.version>0.19.3</dataframe.ec.version>
+        <jol.version>0.17</jol.version>
+        <junit5.version>5.9.2</junit5.version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
+        <maven.compiler.fork>true</maven.compiler.fork>
+        <maven.compiler.verbose>true</maven.compiler.verbose>
+        <maven.compiler.meminitial>2048m</maven.compiler.meminitial>
+        <maven.compiler.maxmem>2048m</maven.compiler.maxmem>
+    </properties>
+
+    <build>
+        <defaultGoal>clean install</defaultGoal>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                    <configuration>
+                        <source>20</source>
+                        <target>20</target>
+                        <compilerArgs>
+                            --enable-preview
+                        </compilerArgs>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.2</version>
+                    <configuration>
+                        <argLine>--enable-preview</argLine>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+<!--            Eclipse Collections-->
+            <dependency>
+                <groupId>org.eclipse.collections</groupId>
+                <artifactId>eclipse-collections-api</artifactId>
+                <version>${eclipse.collections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.collections</groupId>
+                <artifactId>eclipse-collections</artifactId>
+                <version>${eclipse.collections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.collections</groupId>
+                <artifactId>eclipse-collections-testutils</artifactId>
+                <version>${eclipse.collections.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+<!--            Jackson-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-csv</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-eclipse-collections</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+<!--            DataFrame-EC-->
+            <dependency>
+                <groupId>io.github.vmzakharov</groupId>
+                <artifactId>dataframe-ec</artifactId>
+                <version>${dataframe.ec.version}</version>
+            </dependency>
+
+<!--            JUnit-->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jol</groupId>
+                <artifactId>jol-core</artifactId>
+                <version>${jol.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

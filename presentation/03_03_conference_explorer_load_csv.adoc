@@ -1,0 +1,57 @@
+=== Load Conference Data from CSV
+
+---
+
+[cols="15a,85a"]
+|====
+| link:../code/native_java/src/main/java/ConferenceExplorer.java[Java Streams with Jackson CSV]
+|
+[source,java,linenums,highlight=5..9]
+----
+private void loadConferencesFromCsv(Predicate<Conference> initialFilter) {
+    CsvSchema headerSchema = CsvSchema.emptySchema().withHeader();
+    URL url = ConferenceExplorer.class.getClassLoader()
+            .getResource("data/conferences.csv");
+    final CsvMapper mapper = new CsvMapper();
+    try (MappingIterator<Map<String, String>> it = mapper
+                    .readerForMapOf(String.class)
+                    .with(headerSchema)
+                    .readValues(url)) {
+        this.createConferencesFromList(initialFilter, it.readAll());
+    }
+----
+| link:../code/eclipse_collections/src/main/java/ConferenceExplorer.java[Eclipse Collections with Jackson CSV]
+|
+[source,java,linenums,highlight=5..9]
+----
+private void loadConferencesFromCsv(Predicate<Conference> initialFilter) {
+    CsvSchema headerSchema = CsvSchema.emptySchema().withHeader();
+    URL url = ConferenceExplorer.class.getClassLoader()
+            .getResource("data/conferences.csv");
+    final CsvMapper mapper = new CsvMapper();
+    try (MappingIterator<Map<String, String>> it = mapper
+                    .readerForMapOf(String.class)
+                    .with(headerSchema)
+                    .readValues(url)) {
+        this.createConferencesFromList(initialFilter, it.readAll());
+    }
+----
+| link:../code/dataframe-ec/src/main/java/ConferenceExplorer.java[DataFrame-EC]
+|
+[source,java,linenums,highlight=5..8]
+----
+private void loadConferencesFromCsv(String initialFilter) {
+    CsvSchema schema = this.createConferenceSchema();
+    URL url = ConferenceExplorer.class.getClassLoader()
+            .getResource("data/conferences.csv");
+    DataFrame dataFrame =
+            new CsvDataSet(url.getPath(), "Conferences", schema)
+                    .loadAsDataFrame();
+    this.addFunctionsAndColumns(dataFrame);
+    this.conferences = dataFrame.selectBy(initialFilter);
+----
+|====
+
+link:toc.adoc[⬆️ TOC] /
+link:./03_02_conference_explorer_test.adoc[⬅️ Conference Explorer Test] /
+link:./03_04_conference_explorer_sort_by.adoc[➡️ ConferenceExplorer - Sort by Days to Event] 🥷

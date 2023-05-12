@@ -1,0 +1,51 @@
+=== Conference Explorer
+
+---
+
+[width=75%]
+[cols="2a,8a"]
+|====
+| link:../code/eclipse_collections/src/main/java/Conference.java[Conference Record]
+|
+[source,java,linenums,highlight=1..4]
+----
+public record Conference(
+        String eventName,
+        Country country,
+        String city,
+        LocalDate startDate, LocalDate endDate,
+        Set<SessionType> sessionTypes)
+----
+| link:../code/native_java/src/main/java/ConferenceExplorer.java[Java Streams]
+|
+[source,java,linenums,highlight=2..3]
+----
+public class ConferenceExplorer {
+    private Set<Conference> conferences;
+    private Set<Country> countries;
+----
+| link:../code/eclipse_collections/src/main/java/ConferenceExplorer.java[Eclipse Collections]
+|
+[source,java,linenums,highlight=2..3]
+----
+public class ConferenceExplorer {
+    private ImmutableSet<Conference> conferences;
+    private ImmutableSet<Country> countries;
+----
+| link:../code/dataframe-ec/src/main/java/ConferenceExplorer.java[DataFrame-EC]
+|
+[source,java,linenums,highlight=2..3]
+----
+public class ConferenceExplorer {
+    private DataFrame conferences;
+    private DataFrame countryCodes;
+----
+|====
+
+* Reads in conferences and countries from two CSV files and filters the data for a specified year
+* Provides methods that `Sort by`, `Group by`, `Count by`, `Sum by`, `Get unique values`
+* Output to JSON Strings
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_04_the_problem_what_to_choose_deatils.adoc[⬅️ What to Choose? In detail.] /
+link:./03_02_conference_explorer_test.adoc[➡️ Conference Explorer Test] 🐢

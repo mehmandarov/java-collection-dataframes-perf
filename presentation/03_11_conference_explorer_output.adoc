@@ -1,0 +1,61 @@
+==== Output Back to JSON using Jackson `ObjectMapper`
+
+---
+
+[cols="15a,85a"]
+|====
+| link:../code/native_java/src/test/java/ConferenceExplorerTest.java[Java Streams]
+|
+[source,java,linenums,highlight=3..3]
+----
+public String outputToJson(Object result) {
+    try {
+        return this.getObjectMapper().writeValueAsString(result);
+    }
+private ObjectMapper getObjectMapper(){
+    return new ObjectMapper().registerModule(new JavaTimeModule());
+}
+----
+| link:../code/eclipse_collections/src/test/java/ConferenceExplorerTest.java[Eclipse Collections]
+|
+[source,java,linenums,highlight=3..6]
+----
+public String outputToJson(Object result) {
+    try {
+        return this.getObjectMapper().writeValueAsString(
+                switch (result) {
+                    case Bag<?> bag -> bag.toMapOfItemToCount();
+                    default -> result;});
+    }
+private ObjectMapper getObjectMapper() {
+    return new ObjectMapper()
+            .registerModule(new EclipseCollectionsModule())
+            .registerModule(new JavaTimeModule());
+}
+
+----
+| link:../code/dataframe-ec/src/test/java/ConferenceExplorerTest.java[DataFrame-EC]
+|
+[source,java,linenums,highlight=3..3]
+----
+public String outputToJson(Object data) {
+    try {
+        return this.getObjectMapper().writeValueAsString(data);
+    }
+private ObjectMapper getObjectMapper() {
+    DataFrameCustomSerializer dfSerializer =
+            new DataFrameCustomSerializer(DataFrame.class);
+    SimpleModule module =
+            new SimpleModule("DataFrameCustomSerializer",
+                            new Version(2, 1, 3, null, null, null));
+    module.addSerializer(DataFrame.class, dfSerializer);
+    return new ObjectMapper().registerModule(module);
+}
+----
+|====
+
+link:toc.adoc[⬆️ TOC] /
+link:./03_10_conference_explorer_get_unique_values.adoc[⬅️ Get Unique Countries and Country Flags] /
+link:./04_java_streams.adoc[➡️ Java Streams] 🥷🐢
+
+

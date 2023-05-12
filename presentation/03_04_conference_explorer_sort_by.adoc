@@ -1,0 +1,58 @@
+=== Sort by `Days to Event`
+
+---
+
+[cols="15a,85a"]
+|====
+| link:../code/eclipse_collections/src/main/java/Conference.java[Conference Record]
+|
+[source,java,linenums,highlight=2..2]
+----
+public long daysToEvent() {
+    return ChronoUnit.DAYS.between(LocalDate.now(), this.startDate);
+}
+----
+| link:../code/native_java/src/test/java/ConferenceExplorerTest.java[Java Streams]
+|
+[source,java,linenums,highlight=2..4]
+----
+public List<Conference> sortByDaysToEvent() {
+    return this.conferences.stream()
+            .sorted(Comparator.comparing(Conference::daysToEvent))
+            .toList();
+}
+----
+| link:../code/eclipse_collections/src/test/java/ConferenceExplorerTest.java[Eclipse Collections]
+|
+[source,java,linenums,highlight=2..3]
+----
+public ImmutableList<Conference> sortByDaysToEvent() {
+    return this.conferences
+            .toImmutableSortedListBy(Conference::daysToEvent);
+}
+----
+| link:../code/dataframe-ec/src/test/java/ConferenceExplorerTest.java[DataFrame-EC]
+|
+[source,java,linenums,highlight=2..13]
+----
+public DataFrame sortByDaysToEvent() {
+    return this.conferences.sortBy(Lists.immutable.with("DaysToEvent"));
+}
+
+private void addDaysUntilFunctionAndDaysToEventColumn(DataFrame dataFrame) {
+    BuiltInFunctions.addFunctionDescriptor(
+            new IntrinsicFunctionDescriptorBuilder("daysUntil")
+                    .parameterNames("date")
+                    .returnType(ValueType.LONG)
+                    .action(context -> new LongValue(
+                            ChronoUnit.DAYS.between(LocalDate.now(),
+                                    context.getDate("date")))));
+    dataFrame.addColumn("DaysToEvent", "daysUntil(StartDate)");
+}
+----
+|====
+
+link:toc.adoc[⬆️ TOC] /
+link:./03_03_conference_explorer_load_csv.adoc[⬅️ ConferenceExplorer - Load CSV Data] /
+link:./03_05_conference_explorer_group_by_country.adoc[➡️ ConferenceExplorer - Group by Country] 🥷
+
