@@ -1,3 +1,7 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -20,7 +24,7 @@ public class SyntheticDataGenerator {
 
         for (int i = 0; i < numRows; i++) {
             int rndNumber = random.nextInt(countries.length);
-            String eventName = "Event " + (i + 1);
+            String eventName = "Synthetically Generated Event " + (i + 1);
             String country = countries[rndNumber];
             String city = country.equals("WWW") ? "Online event" : cities[rndNumber];
 
