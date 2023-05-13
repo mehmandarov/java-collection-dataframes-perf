@@ -50,7 +50,7 @@ public record Country(String name, String code, String flag)
 
     public static Country newIfAbsent(String name, String code)
     {
-        return COUNTRY_BY_NAME.getIfAbsent(name, () -> new Country(name, code));
+        return COUNTRY_BY_NAME.getIfAbsent(name, () -> new Country(name, code.toUpperCase()));
     }
 
     public static Country getByName(String name)
