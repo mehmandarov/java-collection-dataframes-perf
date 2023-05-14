@@ -1,8 +1,9 @@
-== Dataframes, Collections, and Streams in Java
+== Performance and Scale
+=== Domain-Oriented Objects vs Tabular Data Structures
 
-image:assets/tobias-fischer-unsplash.jpg[Title Picture,800]
+image:assets/tobias-fischer-unsplash.jpg[Title Picture,700]
 
-=== 🇬🇷 _Devoxx Greece 2023_
+=== QCon New York 2023
 ===== 🥷 Rustam Mehmandarov -- link:https://twitter.com/rmehmandarov[@RMehmandarov]
 ===== 🐢 Donald Raab -- link:https://twitter.com/TheDonRaab[@TheDonRaab]
 ---

@@ -1,4 +1,4 @@
-=== CSV Data to Load _(example, pretty printed)_
+=== Sample CSV Data to Load _(example, pretty printed)_
 
 ---
 
@@ -15,4 +15,4 @@ jChampionsConf,WWW,Online event,2023-01-19,2023-01-24,"[talks,]"
 |===
 link:toc.adoc[⬆️ TOC] /
 link:./02_01_the_problem.adoc[⬅️ The Problem] /
-link:./02_03_the_problem_what_to_choose.adoc[➡️ What to Choose?] 🥷
+link:./02_03_measuring_memory_efficiency.adoc[➡️ Measuring memory efficiency] 🥷

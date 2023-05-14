@@ -2,15 +2,16 @@
 
 ---
 
-* We have data that needs to be processed.
-** Conference data, of course!
+* We have a lot of CSV data that needs to be processed in-memory.
 * Can we do that in Java in an efficient way?
-** Yes? How?
-* What options do we have? Some examples:
+** How can we measure memory efficiency of data structures?
+** What decisions can affect memory efficiency?
+* What options do we have?
 ** Java Streams
 *** Part of Java standard library
 ** link:https://github.com/eclipse/eclipse-collections[Eclipse Collections]
-*** Open Source library maintained at Eclipse Foundation
+*** Open Sourced by Goldman Sachs in 2012 as GS Collections
+*** Open Source library maintained at Eclipse Foundation since 2015
 ** link:https://github.com/vmzakharov/dataframe-ec[DataFrame-EC]
 *** Open Source library created by Vladimir Zakharov
 

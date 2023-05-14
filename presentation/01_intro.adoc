@@ -1,4 +1,4 @@
-=== Dataframes, Collections, and Streams in Java - Introduction
+=== Domain-Oriented Objects vs Tabular Data Structures - Introduction
 
 ==== Rustam Mehmandarov (link:https://twitter.com/RMehmandarov[@RMehmandarov])  🥷
 * Chief Engineer @ Computas
