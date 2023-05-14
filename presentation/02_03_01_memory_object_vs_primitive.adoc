@@ -1,0 +1,68 @@
+=== Memory - Object vs. Primitive
+
+---
+
+[width=100%]
+[cols="5a,5a"]
+|====
+| Class with Boxed Primitives
+|
+Class with Plain Primitives
+|
+[source,java,linenums,highlight=2..3]
+----
+class MinMaxPrimitivesBoxed
+{
+    private Boolean trueValue;
+    private Boolean falseValue;
+    private Byte minbyteValue;
+    private Byte maxbyteValue;
+    private Character minCharValue;
+    private Character maxCharValue;
+    private Short minShortValue;
+    private Short maxShortValue;
+    private Integer minIntValue;
+    private Integer maxIntValue;
+    private Float minFloatValue;
+    private Float maxFloatValue;
+    private Long minLongValue;
+    private Long maxLongValue;
+    private Double minDoubleValue;
+    private Double maxDoubleValue;
+}
+
+----
+|
+[source,java,linenums,highlight=2..3]
+----
+class MinMaxPrimitivesPlain
+{
+    private boolean trueValue;
+    private boolean falseValue;
+    private byte minbyteValue;
+    private byte maxbyteValue;
+    private char minCharValue;
+    private char maxCharValue;
+    private short minShortValue;
+    private short maxShortValue;
+    private int minIntValue;
+    private int maxIntValue;
+    private float minFloatValue;
+    private float maxFloatValue;
+    private long minLongValue;
+    private long maxLongValue;
+    private double minDoubleValue;
+    private double maxDoubleValue;
+}
+----
+|
+Memory Cost: *368 bytes*
+|
+Memory Cost: *72 bytes*
+|====
+
+* *Recommendation*: Prefer primitives to boxed wrappers
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_04_the_problem_what_to_choose_deatils.adoc[⬅️ What to Choose? In detail.] /
+link:./03_02_conference_explorer_test.adoc[➡️ Conference Explorer Test] 🐢
