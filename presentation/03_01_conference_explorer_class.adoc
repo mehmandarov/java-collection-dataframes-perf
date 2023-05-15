@@ -47,5 +47,5 @@ public class ConferenceExplorer {
 * Output to JSON Strings
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_04_the_problem_what_to_choose_deatils.adoc[⬅️ What to Choose? In detail.] /
+link:./02_04_the_problem_what_to_choose_details.adoc[⬅️ What to Choose? In detail.] /
 link:./03_02_conference_explorer_test.adoc[➡️ Conference Explorer Test] 🐢

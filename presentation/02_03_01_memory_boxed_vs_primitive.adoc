@@ -65,4 +65,4 @@ Memory Cost: *72 bytes*
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_03_00_measuring_memory_cost.adoc[⬅️ Measuring memory cost] /
-link:./02_04_the_problem_what_to_choose_deatils.adoc[➡️ What to choose?] 🐢
+link:./02_04_the_problem_what_to_choose_details.adoc[➡️ What to choose?] 🐢
