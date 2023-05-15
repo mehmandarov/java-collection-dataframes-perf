@@ -26,7 +26,7 @@ image:assets/lego_stack.jpg[assets/lego_stack.jpg,500,float=right]
 ---
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_03_the_problem_what_to_choose.adoc[⬅️ What to Choose?] /
+link:./02_03_01_memory_boxed_vs_primitive.adoc[⬅️ Memory Cost - Boxed vs. Primitive] /
 link:./03_01_conference_explorer_class.adoc[➡️ ConferenceExplorer] 🐢
 
 

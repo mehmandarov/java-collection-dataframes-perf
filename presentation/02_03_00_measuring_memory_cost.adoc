@@ -1,4 +1,4 @@
-=== Measuring Memory Efficiency in Java
+=== Measuring Memory Cost in Java
 
 ---
 
@@ -17,7 +17,7 @@
 * link:https://stackoverflow.com/questions/76130264/does-java-object-layout-work-with-java-records[StackOverflow: Does JOL work with Java Records?]
 ** Use VM Flag: ```-Djol.magicFieldOffset=true```
 * Memory Considerations
-** Object vs. Primitive
+** Boxed vs. Primitive
 ** Mutable vs. Immutable
 ** Data structure alternatives
 ** Rows (Objects) vs. Columns (Data)
@@ -27,4 +27,4 @@
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_02_the_problem_csv_data_to_load.adoc[⬅️ CSV Data to Load] /
-link:./02_03_01_memory_object_vs_primitive.adoc[➡️ Memory - Object vs. Primitive] 🥷
+link:./02_03_01_memory_boxed_vs_primitive.adoc[➡️ Memory Cost - Boxed vs. Primitive] 🥷

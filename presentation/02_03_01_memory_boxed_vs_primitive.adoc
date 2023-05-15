@@ -1,4 +1,4 @@
-=== Memory - Object vs. Primitive
+=== Memory Cost - Boxed vs. Primitive
 
 ---
 
@@ -61,8 +61,8 @@ Memory Cost: *368 bytes*
 Memory Cost: *72 bytes*
 |====
 
-* *Recommendation*: Prefer primitives to boxed wrappers
+* *Recommendation*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_04_the_problem_what_to_choose_deatils.adoc[⬅️ What to Choose? In detail.] /
-link:./03_02_conference_explorer_test.adoc[➡️ Conference Explorer Test] 🐢
+link:./02_03_00_measuring_memory_cost.adoc[⬅️ Measuring memory cost] /
+link:./02_04_the_problem_what_to_choose_deatils.adoc[➡️ What to choose?] 🐢
