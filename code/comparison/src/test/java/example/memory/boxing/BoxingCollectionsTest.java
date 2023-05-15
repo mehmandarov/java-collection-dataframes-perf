@@ -29,9 +29,11 @@ public class BoxingCollectionsTest
     public void toFootprintSets()
     {
         HashSet<Integer> jdkBoxedSet = new HashSet<>(Interval.oneTo(10));
+        MutableSet<Integer> ecBoxedSet = Interval.oneTo(10).toSet();
         MutableIntSet ecPrimitiveSet = IntInterval.oneTo(10).toSet();
 
         System.out.println(GraphLayout.parseInstance(jdkBoxedSet).toFootprint());
+        System.out.println(GraphLayout.parseInstance(ecBoxedSet).toFootprint());
         System.out.println(GraphLayout.parseInstance(ecPrimitiveSet).toFootprint());
     }
 
@@ -39,9 +41,11 @@ public class BoxingCollectionsTest
     public void toFootprintLists()
     {
         List<Integer> jdkBoxedList = new ArrayList<>(Interval.oneTo(10));
+        MutableList<Integer> ecBoxedList = Interval.oneTo(10).toList();
         MutableIntList ecPrimitiveList = IntInterval.oneTo(10).toList();
 
         System.out.println(GraphLayout.parseInstance(jdkBoxedList).toFootprint());
+        System.out.println(GraphLayout.parseInstance(ecBoxedList).toFootprint());
         System.out.println(GraphLayout.parseInstance(ecPrimitiveList).toFootprint());
     }
 

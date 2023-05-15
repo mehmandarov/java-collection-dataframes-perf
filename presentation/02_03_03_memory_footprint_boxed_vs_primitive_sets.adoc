@@ -10,16 +10,18 @@
 [source,java,linenums]
 ----
 HashSet<Integer> jdkBoxedSet = new HashSet<>(Interval.oneTo(10));
+MutableSet<Integer> ecBoxedSet = Interval.oneTo(10).toSet();
 MutableIntSet ecPrimitiveSet = IntInterval.oneTo(10).toSet();
 
 System.out.println(GraphLayout.parseInstance(jdkBoxedSet).toFootprint());
+System.out.println(GraphLayout.parseInstance(ecBoxedSet).toFootprint());
 System.out.println(GraphLayout.parseInstance(ecPrimitiveSet).toFootprint());
 ----
 | Output:
 |
 [source,text,linenums]
 ----
-java.util.HashSet@7cc0cdadd footprint:
+java.util.HashSet@7d20d0bd footprint:
      COUNT       AVG       SUM   DESCRIPTION
          1        80        80   [Ljava.util.HashMap$Node;
         10        16       160   java.lang.Integer
@@ -29,8 +31,14 @@ java.util.HashSet@7cc0cdadd footprint:
          1        16        16   java.util.HashSet
         24                 640   (total)
 
+org.eclipse.collections.impl.set.mutable.UnifiedSet@7dfd3c81d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        80        80   [Ljava.lang.Object;
+        10        16       160   java.lang.Integer
+         1        32        32   org.eclipse.collections.impl.set.mutable.UnifiedSet
+        12                 272   (total)
 
-org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@8462f31d footprint:
+org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@626abbd0d footprint:
      COUNT       AVG       SUM   DESCRIPTION
          1        80        80   [I
          1        40        40   org.eclipse.collections.impl.set.mutable.primitive.IntHashSet
@@ -39,6 +47,7 @@ org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@8462f31d footprint
 |====
 
 * *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
+* *Recommendation*: Don't use java.util.HashSet! It is a memory hog!
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_03_02_memory_footprint_boxed_vs_primitive.adoc[⬅️ Memory Footpring - Boxed vs. Primitive] /
