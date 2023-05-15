@@ -1,4 +1,4 @@
-package example.eclipse.collections.conferences;
+package example.eclipse.collections.conferences.immutable.set;
 
 import org.eclipse.collections.api.factory.primitive.CharSets;
 import org.eclipse.collections.api.set.ImmutableSet;

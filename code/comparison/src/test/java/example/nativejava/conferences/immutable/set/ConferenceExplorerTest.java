@@ -1,4 +1,4 @@
-package example.nativejava.conferences;
+package example.nativejava.conferences.immutable.set;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

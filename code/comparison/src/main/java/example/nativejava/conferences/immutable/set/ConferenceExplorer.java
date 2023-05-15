@@ -1,4 +1,4 @@
-package example.nativejava.conferences;
+package example.nativejava.conferences.immutable.set;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.MappingIterator;

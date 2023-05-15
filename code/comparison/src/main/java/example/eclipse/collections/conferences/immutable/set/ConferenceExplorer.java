@@ -1,4 +1,4 @@
-package example.eclipse.collections.conferences;
+package example.eclipse.collections.conferences.immutable.set;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.MappingIterator;

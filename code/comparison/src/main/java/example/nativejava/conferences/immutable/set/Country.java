@@ -1,4 +1,4 @@
-package example.nativejava.conferences;
+package example.nativejava.conferences.immutable.set;
 
 import java.util.AbstractMap;
 import java.util.Map;

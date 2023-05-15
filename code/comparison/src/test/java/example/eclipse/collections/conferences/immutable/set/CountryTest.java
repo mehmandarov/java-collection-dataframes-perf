@@ -1,4 +1,4 @@
-package example.eclipse.collections.conferences;
+package example.eclipse.collections.conferences.immutable.set;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
