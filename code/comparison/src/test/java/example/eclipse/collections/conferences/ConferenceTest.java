@@ -1,4 +1,4 @@
-package example.eclipse.collections;
+package example.eclipse.collections.conferences;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package example.eclipse.collections;
+package example.eclipse.collections.conferences;
 
 import org.eclipse.collections.api.RichIterable;
 import org.eclipse.collections.api.bag.Bag;

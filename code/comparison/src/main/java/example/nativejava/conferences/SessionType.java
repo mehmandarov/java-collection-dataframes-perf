@@ -1,4 +1,4 @@
-package example.nativejava;
+package example.nativejava.conferences;
 
 import java.util.Set;
 import java.util.stream.Collectors;

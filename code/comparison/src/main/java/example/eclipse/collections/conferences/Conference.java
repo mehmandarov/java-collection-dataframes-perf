@@ -1,11 +1,11 @@
-package example.nativejava;
+package example.eclipse.collections.conferences;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.eclipse.collections.api.set.ImmutableSet;
 
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.temporal.ChronoUnit;
-import java.util.Set;
 
 public record Conference(
         String eventName,
@@ -13,12 +13,11 @@ public record Conference(
         String city,
         LocalDate startDate,
         LocalDate endDate,
-        Set<SessionType> sessionTypes)
+        ImmutableSet<SessionType> sessionTypes)
 {
     public Conference(String eventName, String country, String city, String startDate, String endDate, String sessionTypes)
     {
-        this(
-                eventName,
+        this(eventName,
                 Country.getByName(country),
                 city,
                 LocalDate.parse(startDate),
@@ -48,6 +47,7 @@ public record Conference(
         return this.sessionTypes.contains(SessionType.TALK);
     }
 
+    @JsonIgnore
     public String countryFlag()
     {
         return this.country.flag();

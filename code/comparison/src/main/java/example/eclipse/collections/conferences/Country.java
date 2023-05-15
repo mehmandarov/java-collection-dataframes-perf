@@ -1,4 +1,4 @@
-package example.eclipse.collections;
+package example.eclipse.collections.conferences;
 
 import org.eclipse.collections.api.map.MutableMap;
 import org.eclipse.collections.api.map.primitive.ImmutableObjectIntMap;

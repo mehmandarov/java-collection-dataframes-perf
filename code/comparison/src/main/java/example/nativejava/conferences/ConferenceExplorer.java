@@ -1,4 +1,4 @@
-package example.nativejava;
+package example.nativejava.conferences;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.MappingIterator;

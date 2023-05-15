@@ -1,4 +1,4 @@
-package example.nativejava;
+package example.nativejava.conferences;
 
 import java.util.AbstractMap;
 import java.util.Map;
