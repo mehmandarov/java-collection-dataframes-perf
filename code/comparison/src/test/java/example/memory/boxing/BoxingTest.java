@@ -130,4 +130,15 @@ public class BoxingTest
         Assertions.assertEquals(72, GraphLayout.parseInstance(new MinMaxPrimitivesPlain()).totalSize());
         Assertions.assertEquals(368, GraphLayout.parseInstance(new MinMaxPrimitivesBoxed()).totalSize());
     }
+
+    @Test
+    public void toFootprint()
+    {
+        System.out.println(
+                GraphLayout.parseInstance(new MinMaxPrimitivesBoxed())
+                        .toFootprint());
+        System.out.println(
+                GraphLayout.parseInstance(new MinMaxPrimitivesPlain())
+                        .toFootprint());
+    }
 }

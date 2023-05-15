@@ -9,7 +9,7 @@
 |
 Class with Plain Primitives
 |
-[source,java,linenums,highlight=2..3]
+[source,java,linenums]
 ----
 class MinMaxPrimitivesBoxed
 {
@@ -33,7 +33,7 @@ class MinMaxPrimitivesBoxed
 
 ----
 |
-[source,java,linenums,highlight=2..3]
+[source,java,linenums]
 ----
 class MinMaxPrimitivesPlain
 {
@@ -56,6 +56,20 @@ class MinMaxPrimitivesPlain
 }
 ----
 |
+[source,java]
+----
+GraphLayout.parseInstance(
+        new MinMaxPrimitivesBoxed())
+.totalSize()
+----
+|
+[source,java]
+----
+GraphLayout.parseInstance(
+        new MinMaxPrimitivesPlain())
+.totalSize()
+----
+|
 Memory Cost: *368 bytes*
 |
 Memory Cost: *72 bytes*
@@ -65,4 +79,4 @@ Memory Cost: *72 bytes*
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_03_00_measuring_memory_cost.adoc[⬅️ Measuring memory cost] /
-link:./02_04_the_problem_what_to_choose_details.adoc[➡️ What to choose?] 🐢
+link:./02_03_02_memory_footprint_boxed_vs_primitive.adoc[➡️ Memory Footprint - Boxed vs. Primitive] 🐢

@@ -1,0 +1,43 @@
+=== Memory Footprint - Boxed vs. Primitive
+
+---
+
+[width=100%]
+[cols="5a"]
+|====
+| Printing Memory Footprint using GraphLayout in JOL
+|
+[source,java,linenums]
+----
+System.out.println(GraphLayout.parseInstance(new MinMaxPrimitivesBoxed()).toFootprint());
+System.out.println(GraphLayout.parseInstance(new MinMaxPrimitivesPlain()).toFootprint());
+----
+|
+[source,text,linenums]
+----
+example.memory.boxing.MinMaxPrimitivesBoxed@5ea434c8d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        80        80   example.memory.boxing.MinMaxPrimitivesBoxed
+         2        16        32   java.lang.Boolean
+         2        16        32   java.lang.Byte
+         2        16        32   java.lang.Character
+         2        24        48   java.lang.Double
+         2        16        32   java.lang.Float
+         2        16        32   java.lang.Integer
+         2        24        48   java.lang.Long
+         2        16        32   java.lang.Short
+        17                 368   (total)
+
+example.memory.boxing.MinMaxPrimitivesPlain@3514a4c0d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        72        72   example.memory.boxing.MinMaxPrimitivesPlain
+         1                  72   (total)
+
+----
+|====
+
+* *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_03_01_memory_boxed_vs_primitive.adoc[⬅️ Memory Cost - Boxed vs. Primitive] /
+link:./02_04_the_problem_what_to_choose_details.adoc[➡️ What to choose?] 🐢
