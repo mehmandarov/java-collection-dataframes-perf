@@ -1,0 +1,45 @@
+=== Memory Footprint - Boxed vs. Primitive Sets
+
+---
+
+[width=100%]
+[cols="5a"]
+|====
+| Printing Memory Footprint using GraphLayout in JOL
+|
+[source,java,linenums]
+----
+HashSet<Integer> jdkBoxedSet = new HashSet<>(Interval.oneTo(10));
+MutableIntSet ecPrimitiveSet = IntInterval.oneTo(10).toSet();
+
+System.out.println(GraphLayout.parseInstance(jdkBoxedSet).toFootprint());
+System.out.println(GraphLayout.parseInstance(ecPrimitiveSet).toFootprint());
+----
+| Output:
+|
+[source,text,linenums]
+----
+java.util.HashSet@7cc0cdadd footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        80        80   [Ljava.util.HashMap$Node;
+        10        16       160   java.lang.Integer
+         1        16        16   java.lang.Object
+         1        48        48   java.util.HashMap
+        10        32       320   java.util.HashMap$Node
+         1        16        16   java.util.HashSet
+        24                 640   (total)
+
+
+org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@8462f31d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        80        80   [I
+         1        40        40   org.eclipse.collections.impl.set.mutable.primitive.IntHashSet
+         2                 120   (total)
+----
+|====
+
+* *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_03_02_memory_footprint_boxed_vs_primitive.adoc[⬅️ Memory Footpring - Boxed vs. Primitive] /
+link:./02_03_04_memory_footprint_boxed_vs_primitive_lists.adoc[➡️ Memory Footpring - Boxed vs. Primitive Lists] 🐢

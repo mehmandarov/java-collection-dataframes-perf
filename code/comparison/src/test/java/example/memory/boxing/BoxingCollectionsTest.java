@@ -15,6 +15,7 @@ import org.eclipse.collections.api.set.primitive.MutableIntSet;
 import org.eclipse.collections.impl.list.Interval;
 import org.eclipse.collections.impl.list.primitive.IntInterval;
 import org.eclipse.collections.impl.utility.StringIterate;
+import org.junit.jupiter.api.Test;
 import org.openjdk.jol.info.GraphLayout;
 
 import java.text.NumberFormat;
@@ -24,6 +25,26 @@ import java.util.stream.Collectors;
 
 public class BoxingCollectionsTest
 {
+    @Test
+    public void toFootprintSets()
+    {
+        HashSet<Integer> jdkBoxedSet = new HashSet<>(Interval.oneTo(10));
+        MutableIntSet ecPrimitiveSet = IntInterval.oneTo(10).toSet();
+
+        System.out.println(GraphLayout.parseInstance(jdkBoxedSet).toFootprint());
+        System.out.println(GraphLayout.parseInstance(ecPrimitiveSet).toFootprint());
+    }
+
+    @Test
+    public void toFootprintLists()
+    {
+        List<Integer> jdkBoxedList = new ArrayList<>(Interval.oneTo(10));
+        MutableIntList ecPrimitiveList = IntInterval.oneTo(10).toList();
+
+        System.out.println(GraphLayout.parseInstance(jdkBoxedList).toFootprint());
+        System.out.println(GraphLayout.parseInstance(ecPrimitiveList).toFootprint());
+    }
+
     public static void main(String[] args)
     {
         boxingImmutableCollections(1, 10, 100, 1_000, 10_000, 100_000, 1_000_000, 10_000_000);

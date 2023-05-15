@@ -14,7 +14,7 @@
     <version>0.17</version>
 </dependency>
 ----
-* link:https://stackoverflow.com/questions/76130264/does-java-object-layout-work-with-java-records[StackOverflow: Does JOL work with Java Records?]
+* link:https://stackoverflow.com/questions/76130264/does-java-object-layout-work-with-java-records[StackOverflow: Does Java Object Layout work with Java Records?]
 ** Use VM Flag: ```-Djol.magicFieldOffset=true```
 * Memory Considerations
 ** Boxed vs. Primitive

@@ -12,6 +12,7 @@
 System.out.println(GraphLayout.parseInstance(new MinMaxPrimitivesBoxed()).toFootprint());
 System.out.println(GraphLayout.parseInstance(new MinMaxPrimitivesPlain()).toFootprint());
 ----
+| Output:
 |
 [source,text,linenums]
 ----
@@ -40,4 +41,4 @@ example.memory.boxing.MinMaxPrimitivesPlain@3514a4c0d footprint:
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_03_01_memory_boxed_vs_primitive.adoc[⬅️ Memory Cost - Boxed vs. Primitive] /
-link:./02_04_the_problem_what_to_choose_details.adoc[➡️ What to choose?] 🐢
+link:./02_03_03_memory_footprint_boxed_vs_primitive_sets.adoc[➡️ Memory Footprint - Boxed vs. Primitive Sets] 🐢

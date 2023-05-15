@@ -1,0 +1,41 @@
+=== Memory Footprint - Boxed vs. Primitive Lists
+
+---
+
+[width=100%]
+[cols="5a"]
+|====
+| Printing Memory Footprint using GraphLayout in JOL
+|
+[source,java,linenums]
+----
+List<Integer> jdkBoxedList = new ArrayList<>(Interval.oneTo(10));
+MutableIntList ecPrimitiveList = IntInterval.oneTo(10).toList();
+
+System.out.println(GraphLayout.parseInstance(jdkBoxedList).toFootprint());
+System.out.println(GraphLayout.parseInstance(ecPrimitiveList).toFootprint());
+----
+| Output:
+|
+[source,text,linenums]
+----
+java.util.ArrayList@7c7b252ed footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        56        56   [Ljava.lang.Object;
+        10        16       160   java.lang.Integer
+         1        24        24   java.util.ArrayList
+        12                 240   (total)
+
+org.eclipse.collections.impl.list.mutable.primitive.IntArrayList@5890e879d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        56        56   [I
+         1        24        24   org.eclipse.collections.impl.list.mutable.primitive.IntArrayList
+         2                  80   (total)
+----
+|====
+
+* *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_03_03_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footprint - Boxed vs. Primitive Sets] /
+link:./02_04_the_problem_what_to_choose_details.adoc[➡️ What to choose?] 🐢
