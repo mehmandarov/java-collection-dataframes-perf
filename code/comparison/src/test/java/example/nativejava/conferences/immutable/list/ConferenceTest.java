@@ -1,4 +1,4 @@
-package example.eclipse.collections.conferences.immutable.list;
+package example.nativejava.conferences.immutable.list;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -10,10 +10,12 @@ public class ConferenceExplorerMemoryTest
         var ecImmutableSetCE = new example.eclipse.collections.conferences.immutable.set.ConferenceExplorer(2023);
         var ecImmutableListCE = new example.eclipse.collections.conferences.immutable.list.ConferenceExplorer(2023);
         var nativeJavaImmutableSetCE = new example.nativejava.conferences.immutable.set.ConferenceExplorer(2023);
+        var nativeJavaImmutableListCE = new example.nativejava.conferences.immutable.list.ConferenceExplorer(2023);
 
         System.out.println(GraphLayout.parseInstance(dataframeEcCE).toFootprint());
         System.out.println(GraphLayout.parseInstance(ecImmutableSetCE).toFootprint());
         System.out.println(GraphLayout.parseInstance(ecImmutableListCE).toFootprint());
         System.out.println(GraphLayout.parseInstance(nativeJavaImmutableSetCE).toFootprint());
+        System.out.println(GraphLayout.parseInstance(nativeJavaImmutableListCE).toFootprint());
     }
 }
