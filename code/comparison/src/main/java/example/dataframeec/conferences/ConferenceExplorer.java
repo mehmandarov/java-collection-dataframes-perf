@@ -33,10 +33,10 @@ public class ConferenceExplorer
         this("yearOf(StartDate) == " + year);
     }
 
-    public ConferenceExplorer(String intialFilter)
+    public ConferenceExplorer(String initialFilter)
     {
         this.loadCountryCodesFromCsv();
-        this.loadConferencesFromCsv(intialFilter);
+        this.loadConferencesFromCsv(initialFilter);
         this.conferences.createIndex("Country", Lists.immutable.with("Country"));
         this.conferences.createIndex("City", Lists.immutable.with("City"));
     }
