@@ -27,9 +27,6 @@
     </developers>
 
     <modules>
-        <module>dataframe-ec</module>
-        <module>eclipse_collections</module>
-        <module>native_java</module>
         <module>utils</module>
         <module>comparison</module>
     </modules>
