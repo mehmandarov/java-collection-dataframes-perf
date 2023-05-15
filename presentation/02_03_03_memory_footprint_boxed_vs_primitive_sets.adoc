@@ -5,7 +5,7 @@
 [width=100%]
 [cols="5a"]
 |====
-| Printing Memory Footprint using GraphLayout in JOL
+| Printing Memory Footprint of three different Sets with int values from 1 to 10
 |
 [source,java,linenums]
 ----
@@ -46,8 +46,8 @@ org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@626abbd0d footprin
 ----
 |====
 
+* *Recommendation*: Avoid using java.util.HashSet! It is a memory hog!
 * *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
-* *Recommendation*: Don't use java.util.HashSet! It is a memory hog!
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_03_02_memory_footprint_boxed_vs_primitive.adoc[⬅️ Memory Footpring - Boxed vs. Primitive] /

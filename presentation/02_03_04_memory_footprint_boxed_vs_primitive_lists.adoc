@@ -5,7 +5,7 @@
 [width=100%]
 [cols="5a"]
 |====
-| Printing Memory Footprint using GraphLayout in JOL
+| Printing Memory Footprint of two different Lists with int values from 1 to 10
 |
 [source,java,linenums]
 ----
@@ -35,6 +35,7 @@ org.eclipse.collections.impl.list.mutable.primitive.IntArrayList@5890e879d footp
 |====
 
 * *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
+* *Note:* Eclipse Collections FastList and JDK ArrayList have similar footprint
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_03_03_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footprint - Boxed vs. Primitive Sets] /
