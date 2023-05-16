@@ -6,7 +6,6 @@
 ** Large static in-memory domain object graph for Financial Services application
 ** Multiple calculated bi-directional/traversable in memory object graphs
 ** Millions of small `List`, `Set`, `Map` instances created with default sized arrays in memory
-*** This resulted in a huge memory bloat
 * Solution: Roll our own in-memory Java data structures
 ** Started with memory-efficient `FixedSized` `List`, `Set`, `Map` for small sizes
 *** Java 9+ introduced similar memory-efficient immutable collections in JDK
@@ -19,10 +18,10 @@
 *** `UnifiedSet` not built out of `HashMap` like JDK `HashSet`
 *** `UnifiedMap` does not store `Entry` objects and inlines keys and values in single array
 **** Project Valhalla may result in similar inlining effect in JDK if `HashMap$Node` becomes a Value Class
-** A complete complement of primitive collections was eventually added for `List`, `Set`, `Bag`, `Stack`, `Map`.
-*** The fastest garbage to collect is the garbage (aka boxed primitives) you didn't generate
+** Primitive collections were eventually added for `List`, `Set`, `Bag`, `Stack`, `Map`.
+*** The fastest garbage to collect is the garbage (aka boxed primitives) you didn't create
 * Fast forward two decades to 2023
-** All of these data structure memory optimizations are part of the open source https://github.com/eclipse/eclipse-collections[Eclipse Collections] library
+** These memory optimizations are part of the open source https://github.com/eclipse/eclipse-collections[Eclipse Collections] library
 
 
 link:toc.adoc[⬆️ TOC] /
