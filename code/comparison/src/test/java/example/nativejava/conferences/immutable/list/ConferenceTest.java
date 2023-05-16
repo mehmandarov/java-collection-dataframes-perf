@@ -12,7 +12,7 @@ public class ConferenceTest
     public void createDevoxxGreece()
     {
         Country.newIfAbsent("Greece", "GR");
-        Conference conference = new Conference("Devoxx Greece","Greece","Athens","2023-05-04","2023-05-06","[talks,workshops]");
+        Conference conference = new Conference("Devoxx Greece","Greece","Athens","2023-05-04","2023-05-06","[talks,workshops]",4,50,75,2000);
         Assertions.assertTrue(conference.hasTalks());
         Assertions.assertTrue(conference.hasWorkshops());
         Assertions.assertEquals(Country.getByName("Greece"), conference.country());
@@ -27,7 +27,7 @@ public class ConferenceTest
     public void createJChampionsConf()
     {
         Country.newIfAbsent("WWW", "www");
-        Conference conference = new Conference("jChampionsConf","WWW","Online event","2023-01-19","2023-01-24","[talks,]");
+        Conference conference = new Conference("jChampionsConf","WWW","Online event","2023-01-19","2023-01-24","[talks,]",4,50,75,2000);
         Assertions.assertTrue(conference.hasTalks());
         Assertions.assertFalse(conference.hasWorkshops());
         Assertions.assertEquals(Country.getByName("WWW"), conference.country());

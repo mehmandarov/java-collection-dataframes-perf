@@ -1,8 +1,8 @@
-EventName,Country,City,StartDate,EndDate,SessionTypes
-Devoxx Greece,Greece,Athens,2023-05-04,2023-05-06,"[talks,workshops]"
-GeeCon,Poland,Krakow,2023-04-19,2023-04-21,"[talks,workshops]"
-DevNexus,United States,Atlanta,2023-04-04,2023-04-06,"[talks,workshops]"
-JavaLand,Germany,Brühl,2023-03-21,2023-03-23,"[talks,workshops]"
-Voxxed Days Bucharest,Romania,Bucharest,2023-03-22,2023-03-24,"[talks,workshops]"
-Jfokus,Sweden,Stockholm,2023-02-06,2023-02-08,"[talks,workshops]"
-jChampionsConf,WWW,Online event,2023-01-19,2023-01-24,"[talks,]"
+EventName,Country,City,StartDate,EndDate,SessionTypes,TrackCount,SessionCount,SpeakerCount,Cost
+Devoxx Greece,Greece,Athens,2023-05-04,2023-05-06,"[talks,workshops]",4,50,75,2000
+GeeCon,Poland,Krakow,2023-04-19,2023-04-21,"[talks,workshops]",4,50,75,2000
+DevNexus,United States,Atlanta,2023-04-04,2023-04-06,"[talks,workshops]",4,50,75,2000
+JavaLand,Germany,Brühl,2023-03-21,2023-03-23,"[talks,workshops]",4,50,75,2000
+Voxxed Days Bucharest,Romania,Bucharest,2023-03-22,2023-03-24,"[talks,workshops]",4,50,75,2000
+Jfokus,Sweden,Stockholm,2023-02-06,2023-02-08,"[talks,workshops]",4,50,75,2000
+jChampionsConf,WWW,Online event,2023-01-19,2023-01-24,"[talks,]",4,50,75,2000

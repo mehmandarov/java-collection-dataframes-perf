@@ -76,7 +76,11 @@ public class ConferenceExplorer
                 map.get("City"),
                 map.get("StartDate"),
                 map.get("EndDate"),
-                map.get("SessionTypes"));
+                map.get("SessionTypes"),
+                Integer.parseInt(map.get("TrackCount")),
+                Integer.parseInt(map.get("SessionCount")),
+                Integer.parseInt(map.get("SpeakerCount")),
+                Integer.parseInt(map.get("Cost")));
     }
 
     private void loadCountriesFromCsv()

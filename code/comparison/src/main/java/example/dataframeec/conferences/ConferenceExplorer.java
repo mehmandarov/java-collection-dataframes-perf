@@ -37,8 +37,6 @@ public class ConferenceExplorer
     {
         this.loadCountryCodesFromCsv();
         this.loadConferencesFromCsv(initialFilter);
-        this.conferences.createIndex("Country", Lists.immutable.with("Country"));
-        this.conferences.createIndex("City", Lists.immutable.with("City"));
     }
 
     private void loadConferencesFromCsv(String initialFilter)
@@ -70,6 +68,10 @@ public class ConferenceExplorer
         conferenceSchema.addColumn("StartDate", ValueType.DATE);
         conferenceSchema.addColumn("EndDate", ValueType.DATE);
         conferenceSchema.addColumn("SessionTypes", ValueType.STRING);
+        conferenceSchema.addColumn("TrackCount", ValueType.LONG);
+        conferenceSchema.addColumn("SessionCount", ValueType.LONG);
+        conferenceSchema.addColumn("SpeakerCount", ValueType.LONG);
+        conferenceSchema.addColumn("Cost", ValueType.LONG);
         return conferenceSchema;
     }
 
@@ -173,12 +175,12 @@ public class ConferenceExplorer
 
     public DfIndex groupByCountry()
     {
-        return this.conferences.index("Country");
+        return new DfIndex(this.conferences, Lists.immutable.with("Country"));
     }
 
     public DfIndex groupByCity()
     {
-        return this.conferences.index("City");
+        return new DfIndex(this.conferences, Lists.immutable.with("City"));
     }
 
     public DataFrame getCountries()

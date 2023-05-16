@@ -1,6 +1,7 @@
 package example.eclipse.collections.conferences.immutable.list;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.github.vmzakharov.ecdataframe.dsl.value.ValueType;
 import org.eclipse.collections.api.list.ImmutableList;
 
 import java.time.LocalDate;
@@ -13,16 +14,33 @@ public record Conference(
         String city,
         LocalDate startDate,
         LocalDate endDate,
-        ImmutableList<SessionType> sessionTypes)
+        ImmutableList<SessionType> sessionTypes,
+        int trackCount,
+        int sessionCount,
+        int speakerCount,
+        int cost)
 {
-    public Conference(String eventName, String country, String city, String startDate, String endDate, String sessionTypes)
+    public Conference(String eventName,
+                      String country,
+                      String city,
+                      String startDate,
+                      String endDate,
+                      String sessionTypes,
+                      int trackCount,
+                      int sessionCount,
+                      int speakerCount,
+                      int cost)
     {
         this(eventName,
                 Country.getByName(country),
                 city,
                 LocalDate.parse(startDate),
                 LocalDate.parse(endDate),
-                SessionType.listFromString(sessionTypes));
+                SessionType.listFromString(sessionTypes),
+                trackCount,
+                sessionCount,
+                speakerCount,
+                cost);
     }
 
     public long durationInDays()

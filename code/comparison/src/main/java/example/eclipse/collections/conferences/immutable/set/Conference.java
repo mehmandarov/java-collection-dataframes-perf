@@ -13,16 +13,33 @@ public record Conference(
         String city,
         LocalDate startDate,
         LocalDate endDate,
-        ImmutableSet<SessionType> sessionTypes)
+        ImmutableSet<SessionType> sessionTypes,
+        int trackCount,
+        int sessionCount,
+        int speakerCount,
+        int cost)
 {
-    public Conference(String eventName, String country, String city, String startDate, String endDate, String sessionTypes)
+    public Conference(String eventName,
+                      String country,
+                      String city,
+                      String startDate,
+                      String endDate,
+                      String sessionTypes,
+                      int trackCount,
+                      int sessionCount,
+                      int speakerCount,
+                      int cost)
     {
         this(eventName,
                 Country.getByName(country),
                 city,
                 LocalDate.parse(startDate),
                 LocalDate.parse(endDate),
-                SessionType.setFromString(sessionTypes));
+                SessionType.setFromString(sessionTypes),
+                trackCount,
+                sessionCount,
+                speakerCount,
+                cost);
     }
 
     public long durationInDays()
