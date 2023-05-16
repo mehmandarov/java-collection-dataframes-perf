@@ -1,5 +1,6 @@
 package example.memory.conferences;
 
+import com.fasterxml.jackson.core.util.InternCache;
 import org.openjdk.jol.info.GraphLayout;
 
 public class ConferenceExplorerMemoryTest

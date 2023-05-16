@@ -7,7 +7,7 @@
 ** How can we measure memory efficiency of data structures?
 ** What decisions can affect memory efficiency?
 * What options do we have?
-** Java Streams
+** Java Collections / Streams
 *** Part of Java standard library
 ** link:https://github.com/eclipse/eclipse-collections[Eclipse Collections]
 *** Open Sourced by Goldman Sachs in 2012 as GS Collections
@@ -17,5 +17,5 @@
 
 
 link:toc.adoc[⬆️ TOC] /
-link:./01_intro.adoc[⬅️ Intro] /
+link:./02_00_the_problem_2004.adoc[⬅️ The problem circa 2004] /
 link:./02_02_the_problem_csv_data_to_load.adoc[➡️ CSV Data to Load] 🥷
