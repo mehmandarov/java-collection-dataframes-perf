@@ -16,6 +16,7 @@
 **** Staying below these sizes required more tuning and optimizing of in-memory structures
 ** Roll our own memory-efficient mutable `Set` and `Map`
 *** `UnifiedSet` not built out of `HashMap` like JDK `HashSet`
+**** `UnifiedSet` is also a `Pool`, or a https://stackoverflow.com/questions/12670292/get-an-item-from-a-java-set[`Set` with a `get`] method and can be used to pool expensive objects
 *** `UnifiedMap` does not store `Entry` objects and inlines keys and values in single array
 **** Project Valhalla may result in similar inlining effect in JDK if `HashMap$Node` becomes a Value Class
 ** Primitive collections were eventually added for `List`, `Set`, `Bag`, `Stack`, `Map`.
