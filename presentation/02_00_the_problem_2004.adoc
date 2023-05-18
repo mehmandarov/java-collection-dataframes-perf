@@ -14,10 +14,10 @@
 ** Roll our own memory-efficient mutable `Set` and `Map`
 *** `UnifiedSet` not built out of `HashMap` like JDK `HashSet`
 *** `UnifiedMap` does not store `Entry` objects and inlines keys and values in single array
-** Primitive collections were eventually added for `List`, `Set`, `Bag`, `Stack`, `Map`.
-
+** Primitive collections were eventually added to Eclipse Collections for `List`, `Set`, `Bag`, `Stack`, `Map`.
 * Fast forward two decades to 2023
-** These memory optimizations are part of the open source https://github.com/eclipse/eclipse-collections[Eclipse Collections] library
+** Many memory optimizations are part of the open source https://github.com/eclipse/eclipse-collections[Eclipse Collections] (EC) library
+** New EC optimizations possible through issue reporting and open source contributions
 
 
 link:toc.adoc[⬆️ TOC] /
