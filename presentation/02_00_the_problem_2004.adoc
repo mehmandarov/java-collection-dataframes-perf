@@ -5,8 +5,8 @@
 * Worked on an in-memory Java architecture that didn't fit in 32-bit memory space
 ** Large static in-memory domain object graph for Financial Services application
 ** Problem: Millions of small `List`, `Set`, `Map` instances created with default sized arrays
-* Solution 1: Roll our own in-memory Java data structures
-** Started with memory-efficient `FixedSized` `List`, `Set`, `Map` for small sizes
+* Solution 1: Roll our own "small size" Java collections
+** Started with memory-efficient `FixedSized` `List`, `Set`, `Map` for small sizes (0 - 6 elements)
 *** Java 9+ introduced similar memory-efficient immutable collections in JDK
 * Software problem (accessible memory) morphed into hardware problem (available memory)
 ** 64-bit JDK 1.4 release initially gave some relief, but increased total heap size
