@@ -41,4 +41,4 @@ example.memory.boxing.MinMaxPrimitivesPlain@3514a4c0d footprint:
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_03_01_memory_boxed_vs_primitive.adoc[⬅️ Memory Cost - Boxed vs. Primitive] /
-link:./02_03_03_memory_footprint_boxed_vs_primitive_sets.adoc[➡️ Memory Footprint - Boxed vs. Primitive Sets] 🐢
+link:./02_03_03_memory_footprint_boxed_vs_primitive_lists.adoc[➡️ Memory Footprint - Boxed vs. Primitive Lists] 🐢

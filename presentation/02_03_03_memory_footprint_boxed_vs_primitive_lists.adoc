@@ -38,5 +38,5 @@ org.eclipse.collections.impl.list.mutable.primitive.IntArrayList@5890e879d footp
 * *Note:* Eclipse Collections FastList and JDK ArrayList have similar footprint
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_03_03_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footprint - Boxed vs. Primitive Sets] /
-link:./02_04_the_problem_what_to_choose_details.adoc[➡️ What to choose?] 🐢
+link:./02_03_02_memory_footprint_boxed_vs_primitive.adoc[⬅️ Memory Footpring - Boxed vs. Primitive] /
+link:./02_03_04_memory_footprint_boxed_vs_primitive_sets.adoc[➡️ Memory Footprint - Boxed vs. Primitive Sets] 🐢

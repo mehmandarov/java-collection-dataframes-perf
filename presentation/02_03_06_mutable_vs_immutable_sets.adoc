@@ -1,0 +1,48 @@
+=== Memory Footprint - Mutable vs. Immutable Sets
+
+---
+
+[width=100%]
+[cols="5a"]
+|====
+| Printing Memory Footprint of two element Mutable and Immutable JDK Sets
+|
+[source,java,linenums]
+----
+Set<Integer> jdkMutableSet = new HashSet<>();
+jdkMutableSet.add(1);
+jdkMutableSet.add(2);
+Set<Integer> jdkImmutableSet = Set.copyOf(jdkMutableSet);
+
+System.out.println(GraphLayout.parseInstance(jdkMutableSet).toFootprint());
+System.out.println(GraphLayout.parseInstance(jdkImmutableSet).toFootprint());
+----
+| Output:
+|
+[source,text,linenums]
+----
+java.util.HashSet@52aa2946d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        80        80   [Ljava.util.HashMap$Node;
+         2        16        32   java.lang.Integer
+         1        16        16   java.lang.Object
+         1        48        48   java.util.HashMap
+         1        16        16   java.util.HashMap$KeySet
+         2        32        64   java.util.HashMap$Node
+         1        16        16   java.util.HashSet
+         9                 272   (total)
+
+java.util.ImmutableCollections$Set12@247d8aed footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         2        16        32   java.lang.Integer
+         1        24        24   java.util.ImmutableCollections$Set12
+         3                  56   (total)
+----
+|====
+
+* *Recommendation*: Avoid using java.util.HashSet! It is a memory hog!
+* *Recommendation*: Build Mutable Sets up and then trim them using Immutable Sets
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_03_05_mutable_vs_immutable_lists.adoc[⬅️ Memory Footpring - Mutable vs. Immutable Lists] /
+link:./02_04_the_problem_what_to_choose_details.adoc[➡️ What to choose details?] 🐢

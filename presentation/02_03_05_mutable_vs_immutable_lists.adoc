@@ -1,0 +1,43 @@
+=== Memory Footprint - Mutable vs. Immutable Lists
+
+---
+
+[width=100%]
+[cols="5a"]
+|====
+| Printing Memory Footprint of two element Mutable and Immutable JDK Sets
+|
+[source,java,linenums]
+----
+List<Integer> jdkMutableList = new ArrayList<>();
+jdkMutableList.add(1);
+jdkMutableList.add(2);
+List<Integer> jdkImmutableList = List.copyOf(jdkMutableList);
+
+System.out.println(GraphLayout.parseInstance(jdkMutableList).toFootprint());
+System.out.println(GraphLayout.parseInstance(jdkImmutableList).toFootprint());
+----
+| Output:
+|
+[source,text,linenums]
+----
+java.util.ArrayList@52aa2946d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        56        56   [Ljava.lang.Object;
+         2        16        32   java.lang.Integer
+         1        24        24   java.util.ArrayList
+         4                 112   (total)
+
+java.util.ImmutableCollections$List12@10163d6d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         2        16        32   java.lang.Integer
+         1        24        24   java.util.ImmutableCollections$List12
+         3                  56   (total)
+----
+|====
+
+* *Recommendation*: Build Mutable Lists up and then trim them using Immutable Lists
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_03_04_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footpring - Boxed vs. Primitive Sets] /
+link:./02_03_06_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable Sets] 🐢
