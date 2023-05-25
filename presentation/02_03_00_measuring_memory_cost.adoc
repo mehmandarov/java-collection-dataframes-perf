@@ -5,7 +5,6 @@
 * Java Object Layout (JOL)
 ** link:https://openjdk.org/projects/code-tools/jol/[OpenJDK Code Tools Project]
 ** _JOL (Java Object Layout) is the tiny toolbox to analyze object layout schemes in JVMs. These tools are using Unsafe, JVMTI, and Serviceability Agent (SA) heavily to decoder the actual object layout, footprint, and references. This makes JOL much more accurate than other tools relying on heap dumps, specification assumptions, etc._
-* Maven Dependency
 [source,xml]
 ----
 <dependency>
@@ -14,16 +13,15 @@
     <version>0.17</version>
 </dependency>
 ----
-* link:https://stackoverflow.com/questions/76130264/does-java-object-layout-work-with-java-records[StackOverflow: Does Java Object Layout work with Java Records?]
+* Baeldung Article: link:https://www.baeldung.com/java-memory-layout[Memory Layout of Objects in Java]
+* StackOverflow: link:https://stackoverflow.com/questions/76130264/does-java-object-layout-work-with-java-records[Does Java Object Layout work with Java Records?]
 ** Use VM Flag: ```-Djol.magicFieldOffset=true```
 * Memory Considerations
 ** Boxed vs. Primitive
 ** Mutable vs. Immutable
 ** Rows (Objects) vs. Columns (Data)
-* Approach
-** Load data and measure static data memory cost using JOL
-
+** The Future of Java
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_02_the_problem_csv_data_to_load.adoc[⬅️ CSV Data to Load] /
-link:./02_03_01_memory_boxed_vs_primitive.adoc[➡️ Memory Cost - Boxed vs. Primitive] 🥷
+link:./02_03_01_memory_boxed_vs_primitive.adoc[➡️ Memory Cost - Boxed vs. Primitive] 🐢
