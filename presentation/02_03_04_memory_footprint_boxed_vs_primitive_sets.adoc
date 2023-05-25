@@ -51,4 +51,4 @@ org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@626abbd0d footprin
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_03_03_memory_footprint_boxed_vs_primitive_lists.adoc[⬅️ Memory Footpring - Boxed vs. Primitive Lists] /
-link:./02_03_06_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable] 🐢
+link:./02_03_07_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable] 🐢

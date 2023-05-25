@@ -1,0 +1,56 @@
+=== Memory Footprint - Boxed vs. Primitive Map of Long -> Set of Long
+
+---
+
+[width=100%]
+[cols="5a"]
+|====
+| Printing Memory Footprint of Map with 200,000 Long Keys with Sets of Random Long values of size 10
+|
+[source,java,linenums]
+----
+PrimitiveIterator.OfLong random1 = new Random(0L).longs(10_000L, 2_000_000L).iterator();
+Map<Long, Set<Long>> map = new HashMap<>();
+LongInterval m = LongInterval.oneTo(200_000L);
+LongInterval s = LongInterval.oneTo(10);
+m.forEach(each -> map.put(each, s.collect(l -> random1.next(), new HashSet<>())));
+System.out.println(GraphLayout.parseInstance(map).toFootprint());
+
+PrimitiveIterator.OfLong random2 = new Random(0L).longs(10_000L, 2_000_000L).iterator();
+MutableLongObjectMap<MutableLongSet> pMap = LongObjectMaps.mutable.empty();
+m.forEach(each -> pMap.put(each, s.asLazy().collectLong(l -> random2.next()).toSet()));
+System.out.println(GraphLayout.parseInstance(pMap).toFootprint());
+----
+| Output:
+|
+[source,text,linenums]
+----
+java.util.HashMap@6356695fd footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+    200001        90  18097168   [Ljava.util.HashMap$Node;
+   2199994        24  52799856   java.lang.Long
+         1        16        16   java.lang.Object
+    200001        48   9600048   java.util.HashMap
+   2199994        32  70399808   java.util.HashMap$Node
+    200000        16   3200000   java.util.HashSet
+   4999991           154096896   (total)
+
+
+org.eclipse.collections.impl.map.mutable.primitive.LongObjectHashMap@58198813d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+    200001       292  58594320   [J
+         1   2097168   2097168   [Ljava.lang.Object;
+         1        40        40   org.ecl.c.impl.map.m.pr.LongObjectHashMap
+         1        24        24   org.ecl.c.impl.map.m.pr.LongObjectHashMap$SentinelValues
+    200000        40   8000000   org.ecl.c.impl.set.m.pr.LongHashSet
+    400004            68691552   (total)
+
+----
+|====
+
+* *Recommendation*: Be careful when nesting collection types, especially `HashSet` which nests a `HashMap`!
+* *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_03_04_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footpring - Boxed vs. Primitive Sets] /
+link:./02_03_07_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable Sets] 🐢
