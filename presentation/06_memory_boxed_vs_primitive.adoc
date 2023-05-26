@@ -78,5 +78,5 @@ Memory Cost: *72 bytes*
 * *Recommendation*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_03_00_measuring_memory_cost.adoc[⬅️ Measuring memory cost] /
-link:./02_03_02_memory_footprint_boxed_vs_primitive.adoc[➡️ Memory Footprint - Boxed vs. Primitive] 🐢
+link:./05_measuring_memory_cost.adoc[⬅️ Measuring memory cost] /
+link:./07_memory_footprint_boxed_vs_primitive.adoc[➡️ Memory Footprint - Boxed vs. Primitive] 🐢

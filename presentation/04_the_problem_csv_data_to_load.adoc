@@ -1,0 +1,18 @@
+=== Sample CSV Data to Load _(example, pretty printed)_
+
+---
+
+[%header,format=csv]
+|===
+EventName,Country,City,StartDate,EndDate,SessionTypes,Tracks,Sessions,Speakers,Cost
+Devoxx Greece,Greece,Athens,2023-05-04,2023-05-06,"[talks,workshops]",4,50,75,2000
+GeeCon,Poland,Krakow,2023-04-19,2023-04-21,"[talks,workshops]",4,50,75,2000
+DevNexus,United States,Atlanta,2023-04-04,2023-04-06,"[talks,workshops]",4,50,75,2000
+JavaLand,Germany,Brühl,2023-03-21,2023-03-23,"[talks,workshops]",4,50,75,2000
+Voxxed Days Bucharest,Romania,Bucharest,2023-03-22,2023-03-24,"[talks,workshops]",4,50,75,2000
+Jfokus,Sweden,Stockholm,2023-02-06,2023-02-08,"[talks,workshops]",4,50,75,2000
+jChampionsConf,WWW,Online event,2023-01-19,2023-01-24,"[talks,]",4,50,75,2000
+|===
+link:toc.adoc[⬆️ TOC] /
+link:./03_the_problem_today.adoc[⬅️ The Problem] /
+link:./05_measuring_memory_cost.adoc[➡️ Measuring memory cost] 🥷

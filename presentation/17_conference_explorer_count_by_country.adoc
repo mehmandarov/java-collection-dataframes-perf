@@ -1,4 +1,4 @@
-=== Count Conferences by `Month`
+=== Count Conferences by `Country`
 
 ---
 
@@ -8,9 +8,9 @@
 |
 [source,java,linenums,highlight=2..4]
 ----
-public Map<Month, Long> countByMonth() {
+public Map<Country, Long> countByCountry() {
     return this.conferences.stream()
-            .collect(Collectors.groupingBy(Conference::getMonth,
+            .collect(Collectors.groupingBy(Conference::country,
                     Collectors.counting()));
 }
 ----
@@ -18,25 +18,25 @@ public Map<Month, Long> countByMonth() {
 |
 [source,java,linenums,highlight=2..2]
 ----
-public Bag<Month> countByMonth() {
-    return this.conferences.countBy(Conference::getMonth);
+public Bag<Country> countByCountry() {
+    return this.conferences.countBy(Conference::country);
 }
 ----
 | link:../code/dataframe-ec/src/test/java/ConferenceExplorerTest.java[DataFrame-EC]
 |
 [source,java,linenums,highlight=2..5]
 ----
-public DataFrame countByMonth() {
+public DataFrame countByCountry() {
     return this.conferences.aggregateBy(
             Lists.immutable.with(
-                    AggregateFunction.count("Month", "MonthCount")),
-            Lists.immutable.with("Month"));
+                    AggregateFunction.count("Country", "CountryCount")),
+            Lists.immutable.with("Country"));
 }
 ----
 |====
 
 link:toc.adoc[⬆️ TOC] /
-link:./03_07_conference_explorer_count_by_country.adoc[⬅️ ConferenceExplorer - Count by Country] /
-link:./03_09_conference_explorer_sum_by.adoc[➡️ ConferenceExplorer - Sum conference days by Country] 🐢
+link:./16_conference_explorer_group_by_city.adoc[⬅️ ConferenceExplorer - Group by City] /
+link:./18_conference_explorer_count_by_month.adoc[➡️ ConferenceExplorer - Count by Month] 🐢
 
 

@@ -1,14 +1,16 @@
-==== Dataframes, Collections, and Streams in Java
+=== Performance and Scale
+==== Domain-Oriented Objects vs Tabular Data Structures
 ===== Table of Contents
 
 * link:00_title.adoc[Title]
 * link:01_intro.adoc[Introduction]
-* link:02_01_the_problem_today.adoc[The Problem]
-* link:03_01_conference_explorer_class.adoc[Conference Explorer]
-** link:04_java_streams.adoc[Java Streams]
-** link:05_eclipse_collections.adoc[Eclipse Collections]
-** link:06_data_frame_ec.adoc[DataFrame-EC]
-* link:07_summary.adoc[Summary]
+* link:02_the_memory_problem_2004.adoc[The Problem - 2004]
+* link:03_the_problem_today.adoc[The Problem - Today]
+* link:14_conference_explorer_class.adoc[Conference Explorer]
+** link:20_java_streams.adoc[Java Streams]
+** link:21_eclipse_collections.adoc[Eclipse Collections]
+** link:22_data_frame_ec.adoc[DataFrame-EC]
+* link:23_summary.adoc[Summary]
 * link:A0_appendix.adoc[Appendix]
 
 ---

@@ -17,4 +17,4 @@
 ---
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_00_the_problem_2004.adoc[➡️ The Problem circa 2004]
+link:./02_the_memory_problem_2004.adoc[➡️ The Memory Problem circa 2004]

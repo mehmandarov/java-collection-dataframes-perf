@@ -23,5 +23,5 @@
 ** The Future of Java
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_02_the_problem_csv_data_to_load.adoc[⬅️ CSV Data to Load] /
-link:./02_03_01_memory_boxed_vs_primitive.adoc[➡️ Memory Cost - Boxed vs. Primitive] 🐢
+link:./04_the_problem_csv_data_to_load.adoc[⬅️ CSV Data to Load] /
+link:./06_memory_boxed_vs_primitive.adoc[➡️ Memory Cost - Boxed vs. Primitive] 🐢

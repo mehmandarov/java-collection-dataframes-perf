@@ -43,9 +43,8 @@ public class ConferenceExplorer {
 |====
 
 * Reads in conferences and countries from two CSV files and filters the data for a specified year
-* Provides methods that `Sort by`, `Group by`, `Count by`, `Sum by`, `Get unique values`
-* Output to JSON Strings
+* Provides methods that `Group by`, `Count by`, `Sum by`
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_04_the_problem_what_to_choose_details.adoc[⬅️ What to Choose? In detail.] /
-link:./03_02_conference_explorer_test.adoc[➡️ Conference Explorer Test] 🐢
+link:./13_the_problem_what_to_choose_details.adoc[⬅️ What to Choose? In detail.] /
+link:./15_conference_explorer_group_by_country.adoc[➡️ ConferenceExplorer - Group by Country] 🐢

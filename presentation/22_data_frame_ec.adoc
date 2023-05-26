@@ -17,5 +17,5 @@
 * Less mature and evolved compared to Java alternatives, like TableSaw
 
 link:toc.adoc[⬆️ TOC] /
-link:./05_eclipse_collections.adoc[⬅️ Eclipse Collections] /
-link:./07_summary.adoc[➡️ Summary] 🥷
+link:./21_eclipse_collections.adoc[⬅️ Eclipse Collections] /
+link:./23_summary.adoc[➡️ Summary] 🥷

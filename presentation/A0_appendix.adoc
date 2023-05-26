@@ -21,4 +21,4 @@
 ---
 
 link:./toc.adoc[⬆️ TOC] /
-link:07_summary.adoc[⬅️ Summary] 🥷🐢
+link:23_summary.adoc[⬅️ Summary] 🥷🐢

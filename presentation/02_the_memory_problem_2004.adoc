@@ -1,0 +1,25 @@
+=== The problems with in-memory Java architectures circa 2004
+
+---
+
+* Worked on an in-memory Financial Serices Java application that didn't fit in 32-bit memory space
+** Problem: Millions of small `List`, `Set`, `Map` instances created with default sized arrays
+** *Solution 1*: Roll our own "small size" Java collections
+*** Started with memory-efficient `FixedSized` `List`, `Set`, `Map` for small sizes (0 - 6 elements)
+*** Java 9+ introduced similar memory-efficient immutable collections in standard library
+* Software problem (accessible memory) morphed into hardware problem (available memory)
+** 64-bit JDK 1.4 release initially gave some relief, but increased total heap size
+** https://www.baeldung.com/jvm-compressed-oops[Compressed OOPS] gave some relief for large heaps <32 gig and eventually <64 gig
+** *Solution 2*: Roll our own memory-efficient mutable `Set`, `Map`, `List`
+*** `UnifiedSet` not built out of `HashMap` like JDK `HashSet`
+*** `UnifiedMap` does not store `Entry` objects and inlines keys and values in single array
+*** `FastList` created backing array after calling `add` - http://wiki.jvmlangsummit.com/images/c/c2/Raab_Collections_Design.pdf[Empty lists stayed empty]
+**** A similar optimization was eventually added to `ArrayList` and `HashMap` in a JDK 7 release
+** *Solution 3*: Primitive collections were  added to Eclipse Collections
+*** Primitive `List`, `Set`, `Bag`, `Stack`, `Map` - Mutable and Immutable types
+
+
+
+link:toc.adoc[⬆️ TOC] /
+link:./01_intro.adoc[⬅️ Intro] /
+link:./03_the_problem_today.adoc[➡️ The problem today] 🐢

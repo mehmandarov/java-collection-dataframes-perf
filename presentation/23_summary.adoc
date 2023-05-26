@@ -16,5 +16,5 @@
 * Code and slides are available here: https://github.com/mehmandarov/java-collection-dataframes
 
 link:toc.adoc[⬆️ TOC] /
-link:./06_data_frame_ec.adoc[⬅️ DataFrame-EC] /
+link:./22_data_frame_ec.adoc[⬅️ DataFrame-EC] /
 link:./A0_appendix.adoc[➡️ Appendix] 🥷🐢

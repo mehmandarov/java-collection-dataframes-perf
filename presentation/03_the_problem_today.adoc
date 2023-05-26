@@ -1,7 +1,12 @@
-=== The Problem
+=== The Problem Today
 
 ---
 
+* Fast forward nearly two decades to 2023
+** Many memory optimizations are included in https://github.com/eclipse/eclipse-collections[Eclipse Collections] (EC) library
+** New EC optimizations happen through issue reporting and open source contributions
+** Dataframe libraries offer column based data processing approach
+*** Problem: Rows vs. Columns - which is better?
 * We have a lot of CSV data that needs to be processed in-memory.
 * Can we do that in Java in an efficient way?
 ** How can we measure memory efficiency of data structures?
@@ -14,8 +19,9 @@
 *** Open Source library maintained at Eclipse Foundation since 2015
 ** link:https://github.com/vmzakharov/dataframe-ec[DataFrame-EC]
 *** Open Source library created by Vladimir Zakharov
+*** Built on top of Eclipse Collections
 
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_00_the_problem_2004.adoc[⬅️ The problem circa 2004] /
-link:./02_02_the_problem_csv_data_to_load.adoc[➡️ CSV Data to Load] 🥷
+link:./02_the_memory_problem_2004.adoc[⬅️ The problem circa 2004] /
+link:./04_the_problem_csv_data_to_load.adoc[➡️ CSV Data to Load] 🥷
