@@ -12,10 +12,13 @@ import org.eclipse.collections.api.block.predicate.Predicate;
 import org.eclipse.collections.api.list.ImmutableList;
 import org.eclipse.collections.api.map.primitive.ObjectLongMap;
 import org.eclipse.collections.api.multimap.list.ImmutableListMultimap;
+import org.eclipse.collections.api.set.Pool;
+import org.eclipse.collections.impl.set.mutable.UnifiedSet;
 import org.eclipse.collections.impl.utility.LazyIterate;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 import java.util.Map;
@@ -86,7 +89,7 @@ public class ConferenceExplorer
         return new Conference(
                 map.get("EventName"),
                 map.get("Country"),
-                map.get("City"),
+                map.get("City").intern(),
                 map.get("StartDate"),
                 map.get("EndDate"),
                 map.get("SessionTypes"),
