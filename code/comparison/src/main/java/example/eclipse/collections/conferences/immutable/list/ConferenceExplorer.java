@@ -89,7 +89,7 @@ public class ConferenceExplorer
         return new Conference(
                 map.get("EventName"),
                 map.get("Country"),
-                map.get("City").intern(),
+                map.get("City"),
                 map.get("StartDate"),
                 map.get("EndDate"),
                 map.get("SessionTypes"),

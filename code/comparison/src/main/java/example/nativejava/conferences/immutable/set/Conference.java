@@ -1,6 +1,7 @@
 package example.nativejava.conferences.immutable.set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import example.Pools;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -32,10 +33,10 @@ public record Conference(
     {
         this(eventName,
                 Country.getByName(country),
-                city,
-                LocalDate.parse(startDate),
-                LocalDate.parse(endDate),
-                SessionType.setFromString(sessionTypes),
+                Pools.poolString(city),
+                Pools.poolDate(LocalDate.parse(startDate)),
+                Pools.poolDate(LocalDate.parse(endDate)),
+                Pools.poolSet(SessionType.setFromString(sessionTypes)),
                 trackCount,
                 sessionCount,
                 speakerCount,

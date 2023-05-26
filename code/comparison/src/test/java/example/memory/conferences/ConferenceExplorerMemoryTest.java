@@ -1,5 +1,6 @@
 package example.memory.conferences;
 
+import example.Pools;
 import org.openjdk.jol.info.GraphLayout;
 
 import java.text.NumberFormat;
@@ -10,6 +11,7 @@ public class ConferenceExplorerMemoryTest
     {
         int[] sizes = {1_000, 10_000, 100_000, 1_000_000};
 
+        Pools.enablePooling();
         for (int size : sizes)
         {
             SyntheticDataGenerator.generateSyntheticData(size, "conferences");

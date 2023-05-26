@@ -1,6 +1,7 @@
 package example.eclipse.collections.conferences.immutable.list;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import example.Pools;
 import io.github.vmzakharov.ecdataframe.dsl.value.ValueType;
 import org.eclipse.collections.api.list.ImmutableList;
 import org.eclipse.collections.api.set.Pool;
@@ -22,8 +23,6 @@ public record Conference(
         int speakerCount,
         int cost)
 {
-    private static Pool<LocalDate> DATE_POOL = new UnifiedSet<>();
-
     public Conference(String eventName,
                       String country,
                       String city,
@@ -37,10 +36,10 @@ public record Conference(
     {
         this(eventName,
                 Country.getByName(country),
-                city,
-                DATE_POOL.put(LocalDate.parse(startDate)),
-                DATE_POOL.put(LocalDate.parse(endDate)),
-                SessionType.listFromString(sessionTypes),
+                Pools.poolString(city),
+                Pools.poolDate(LocalDate.parse(startDate)),
+                Pools.poolDate(LocalDate.parse(endDate)),
+                Pools.poolImmutableList(SessionType.listFromString(sessionTypes)),
                 trackCount,
                 sessionCount,
                 speakerCount,

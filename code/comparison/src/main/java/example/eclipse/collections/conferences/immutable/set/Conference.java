@@ -1,6 +1,7 @@
 package example.eclipse.collections.conferences.immutable.set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import example.Pools;
 import org.eclipse.collections.api.set.ImmutableSet;
 
 import java.time.LocalDate;
@@ -32,10 +33,10 @@ public record Conference(
     {
         this(eventName,
                 Country.getByName(country),
-                city,
-                LocalDate.parse(startDate),
-                LocalDate.parse(endDate),
-                SessionType.setFromString(sessionTypes),
+                Pools.poolString(city),
+                Pools.poolDate(LocalDate.parse(startDate)),
+                Pools.poolDate(LocalDate.parse(endDate)),
+                Pools.poolImmutableSet(SessionType.setFromString(sessionTypes)),
                 trackCount,
                 sessionCount,
                 speakerCount,
