@@ -9,7 +9,7 @@ import org.eclipse.collections.impl.utility.ArrayIterate;
 
 public enum SessionType
 {
-    TALK("Talks"), WORKSHOP("Workshops");
+    TALK("Talks"), WORKSHOP("Workshops"), LIGHTNING_TALK("Lightning Talks");
 
     private static final ImmutableCharSet BRACKETS = CharSets.immutable.with('[', ']');
     private final String name;
@@ -21,7 +21,7 @@ public enum SessionType
 
     public static SessionType fromString(String sessionType)
     {
-        return ArrayIterate.detect(SessionType.values(), type -> sessionType.equalsIgnoreCase(type.name));
+        return ArrayIterate.detect(SessionType.values(), type -> sessionType.trim().equalsIgnoreCase(type.name));
     }
 
     public static ImmutableList<SessionType> listFromString(String sessionTypes)

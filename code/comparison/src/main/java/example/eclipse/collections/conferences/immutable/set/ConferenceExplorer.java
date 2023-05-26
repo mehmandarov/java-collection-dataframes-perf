@@ -26,6 +26,19 @@ public class ConferenceExplorer
     private ImmutableSet<Conference> conferences;
     private ImmutableSet<Country> countries;
 
+    private static String DATA_CONFERENCES_CSV = "data/conferences.csv";
+    public static void setCSVSize(int size)
+    {
+        if (size > 0)
+        {
+            DATA_CONFERENCES_CSV = "data/conferences_" + size + ".csv";
+        }
+        else
+        {
+            DATA_CONFERENCES_CSV = "data/conferences.csv";
+        }
+    }
+
     public ConferenceExplorer(int year)
     {
         this(yearPredicate(year));
@@ -46,7 +59,7 @@ public class ConferenceExplorer
     {
         CsvSchema headerSchema = CsvSchema.emptySchema().withHeader();
         URL url = ConferenceExplorer.class.getClassLoader()
-                .getResource("data/conferences.csv");
+                .getResource(DATA_CONFERENCES_CSV);
         final CsvMapper mapper = new CsvMapper();
         try (
                 MappingIterator<Map<String, String>> it = mapper

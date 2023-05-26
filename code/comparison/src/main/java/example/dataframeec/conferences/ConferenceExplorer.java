@@ -28,6 +28,19 @@ public class ConferenceExplorer
     private DataFrame conferences;
     private DataFrame countryCodes;
 
+    private static String DATA_CONFERENCES_CSV = "data/conferences.csv";
+    public static void setCSVSize(int size)
+    {
+        if (size > 0)
+        {
+            DATA_CONFERENCES_CSV = "data/conferences_" + size + ".csv";
+        }
+        else
+        {
+            DATA_CONFERENCES_CSV = "data/conferences.csv";
+        }
+    }
+
     public ConferenceExplorer(int year)
     {
         this("yearOf(StartDate) == " + year);
@@ -43,7 +56,7 @@ public class ConferenceExplorer
     {
         CsvSchema schema = this.createConferenceSchema();
         URL url = ConferenceExplorer.class.getClassLoader()
-                .getResource("data/conferences.csv");
+                .getResource(DATA_CONFERENCES_CSV);
         DataFrame dataFrame =
                 new CsvDataSet(url.getPath(), "Conferences", schema)
                         .loadAsDataFrame();

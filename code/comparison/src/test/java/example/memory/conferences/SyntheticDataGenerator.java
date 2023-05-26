@@ -1,23 +1,28 @@
+package example.memory.conferences;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
 
 public class SyntheticDataGenerator
 {
-
-    final static int NUMBER_OF_SAMPLES = 1_000_000;
     final static int CONF_NAME_LENGTH_MAX = 20;
     final static int CONF_NAME_LENGTH_MIN = 6;
     final static String DATE_PERIOD_START = "2023-01-01";
     final static String DATE_PERIOD_END = "2023-12-31";
 
 
-    public static void main(String[] args)
+    public static void generateSyntheticData(int numRows, String filePrefix)
     {
-        List<String[]> syntheticData = generateSyntheticData(NUMBER_OF_SAMPLES);
-        printDataToCSV(syntheticData);
+        List<String[]> syntheticData = generateSyntheticData(numRows);
+        URL data = SyntheticDataGenerator.class.getClassLoader().getResource("data");
+        printDataToCSV(syntheticData, data.getPath() + "/" + filePrefix + "_" + numRows + ".csv");
     }
 
     private static List<String[]> generateSyntheticData(int numRows)
@@ -120,9 +125,8 @@ public class SyntheticDataGenerator
         return "\"" + selectedTypes + "\"";
     }
 
-    private static void printDataToCSV(List<String[]> data)
+    private static void printDataToCSV(List<String[]> data, String csvFileName)
     {
-        String csvFileName = "synthetic_data.csv";
         try (PrintWriter writer = new PrintWriter(new FileWriter(csvFileName)))
         {
             String header = "EventName,Country,City,StartDate,EndDate,SessionTypes,TrackCount,SessionCount,SpeakerCount,Cost";
