@@ -39,5 +39,5 @@ java.util.ImmutableCollections$List12@10163d6d footprint:
 * *Recommendation*: Build Mutable Lists up and then trim them using Immutable Lists
 
 link:toc.adoc[⬆️ TOC] /
-link:./10_memory_footprint_boxed_vs_primitive_map_of_sets.adoc[⬅️ Memory Footpring - Boxed vs. Primitive Sets] /
+link:./10_memory_footprint_boxed_vs_primitive_map_of_sets.adoc[⬅️ Memory Footprint - Boxed vs. Primitive Sets] /
 link:./12_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable Sets] 🐢
