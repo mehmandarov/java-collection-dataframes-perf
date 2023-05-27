@@ -22,6 +22,10 @@ public record Conference(
         int sessionCount,
         int speakerCount,
         int cost)
+//        short trackCount,  // Save 8 byes per Conference instance with this change
+//        short sessionCount,
+//        short speakerCount,
+//        short cost)
 {
     public Conference(String eventName,
                       String country,
@@ -44,6 +48,10 @@ public record Conference(
                 sessionCount,
                 speakerCount,
                 cost);
+//                (short) trackCount,   // Save 8 byes per Conference instance with this change
+//                (short) sessionCount,
+//                (short) speakerCount,
+//                (short) cost);
     }
 
     public long durationInDays()
