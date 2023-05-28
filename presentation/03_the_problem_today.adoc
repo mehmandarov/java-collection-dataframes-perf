@@ -2,15 +2,11 @@
 
 ---
 
-* Fast forward nearly two decades to 2023
-** Many memory optimizations are included in https://github.com/eclipse/eclipse-collections[Eclipse Collections] (EC) library
-** New EC optimizations happen through issue reporting and open source contributions
-** Dataframe libraries offer column based data processing approach
-*** Problem: Rows vs. Columns - which is better?
 * We have a lot of CSV data that needs to be processed in-memory.
 * Can we do that in Java in an efficient way?
 ** How can we measure memory efficiency of data structures?
 ** What decisions can affect memory efficiency?
+** Problem: Rows vs. Columns - which is better?
 * What options do we have?
 ** Java Collections / Streams
 *** Part of Java standard library
