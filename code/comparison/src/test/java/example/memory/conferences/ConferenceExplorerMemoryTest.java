@@ -1,6 +1,7 @@
 package example.memory.conferences;
 
 import example.Pools;
+import io.github.vmzakharov.ecdataframe.dataframe.DataFrame;
 import org.openjdk.jol.info.GraphLayout;
 
 import java.text.NumberFormat;

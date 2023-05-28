@@ -1,0 +1,12 @@
+=== Memory Comparison - Sweating the Small Stuff
+
+---
+
+image:assets/immutablelist_comparison.jpg[ImmutableList Comparison]
+
+* *Recommendation*: If you have a lot of small immutable collections, consider using Eclipse Collections
+
+
+link:toc.adoc[⬆️ TOC] /
+link:./11_mutable_vs_immutable_sets.adoc[⬅️ Memory Footprint - Mutable vs. Immutable Sets] /
+link:./13_the_problem_what_to_choose_details.adoc[➡️ What to choose details?] 🐢

@@ -44,5 +44,5 @@ java.util.ImmutableCollections$Set12@247d8aed footprint:
 * *Recommendation*: Build Mutable Sets up and then trim them using Immutable Sets
 
 link:toc.adoc[⬆️ TOC] /
-link:./11_mutable_vs_immutable_lists.adoc[⬅️ Memory Footpring - Mutable vs. Immutable Lists] /
-link:./13_the_problem_what_to_choose_details.adoc[➡️ What to choose details?] 🐢
+link:./10_mutable_vs_immutable_lists.adoc[⬅️ Memory Footprint - Mutable vs. Immutable Lists] /
+link:./12_sweating_the_small_stuff.adoc[➡️ Sweating the Small Stuff] 🐢
