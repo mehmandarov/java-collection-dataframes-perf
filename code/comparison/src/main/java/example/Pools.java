@@ -29,6 +29,16 @@ public class Pools
         POOLING_ENABLED = false;
     }
 
+    public static void clearPools()
+    {
+        STRING_POOL.clear();
+        DATE_POOL.clear();
+        IMMUTABLE_SET_POOL.clear();
+        IMMUTABLE_LIST_POOL.clear();
+        SET_POOL.clear();
+        LIST_POOL.clear();
+    }
+
     public static String poolString(String value)
     {
         if (POOLING_ENABLED)
