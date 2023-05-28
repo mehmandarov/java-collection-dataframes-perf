@@ -5,7 +5,7 @@
 [width=75%]
 [cols="2a,8a"]
 |====
-| link:../code/eclipse_collections/src/main/java/Conference.java[Conference Record]
+| link:../code/comparison/src/main/java/example/nativejava/conferences/immutable/set/Conference.java[Conference Record]
 |
 [source,java,linenums,highlight=1..4]
 ----
@@ -16,7 +16,7 @@ public record Conference(
         LocalDate startDate, LocalDate endDate,
         Set<SessionType> sessionTypes)
 ----
-| link:../code/native_java/src/main/java/ConferenceExplorer.java[Java Streams]
+| link:../code/comparison/src/main/java/example/nativejava/conferences/immutable/set/ConferenceExplorer.java[Java Streams]
 |
 [source,java,linenums,highlight=2..3]
 ----
@@ -24,7 +24,7 @@ public class ConferenceExplorer {
     private Set<Conference> conferences;
     private Set<Country> countries;
 ----
-| link:../code/eclipse_collections/src/main/java/ConferenceExplorer.java[Eclipse Collections]
+| link:../code/comparison/src/main/java/example/eclipse/collections/conferences/immutable/set/ConferenceExplorer.java[Eclipse Collections]
 |
 [source,java,linenums,highlight=2..3]
 ----
@@ -32,7 +32,7 @@ public class ConferenceExplorer {
     private ImmutableSet<Conference> conferences;
     private ImmutableSet<Country> countries;
 ----
-| link:../code/dataframe-ec/src/main/java/ConferenceExplorer.java[DataFrame-EC]
+| link:../code/comparison/src/main/java/example/dataframeec/conferences/ConferenceExplorer.java[DataFrame-EC]
 |
 [source,java,linenums,highlight=2..3]
 ----
@@ -43,7 +43,7 @@ public class ConferenceExplorer {
 |====
 
 * Reads in conferences and countries from two CSV files and filters the data for a specified year
-* Provides methods that `Group by`, `Count by`, `Sum by`
+* We measured the memory required for methods that `Group by`, `Count by`, `Sum by`
 
 link:toc.adoc[⬆️ TOC] /
 link:./13_the_problem_what_to_choose_details.adoc[⬅️ What to Choose? In detail.] /
