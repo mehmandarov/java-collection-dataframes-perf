@@ -8,7 +8,10 @@
 * What is a Pool useful for?
 ** Reducing the number of duplicate values of a specific set of data in memory
 ** Reusing references to a shared value (e.g. City) across many instances (e.g. Conference)
-* What objects were pooled in `Conference` and how did this help?
+* How did DataFrame-EC pool data?
+** DataFrame-EC uses Eclipse Collections to pool data for each column
+** This resulted in significant memory savings for our data without us having to do anything
+* What fields were pooled manually in `Conference` for Java and Eclipse Collections and how did this help?
 ** For 1 Million Generated conferences
 
 [width=100%]
