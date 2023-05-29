@@ -2,7 +2,7 @@
 
 ---
 
-image:assets/conferenceexplorer_memory.jpg[Conference Explorer Comparison]
+image:assets/conferences_with_pooling.png[Conference Explorer Comparison]
 
 * We didn't change anything with DataFrame-EC
 * We implemented custom pooling using Eclipse Collections for Collections-based solutions

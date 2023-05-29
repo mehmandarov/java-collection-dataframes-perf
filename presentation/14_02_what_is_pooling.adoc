@@ -3,8 +3,8 @@
 ---
 
 * Pool
-** A `Set` of unique values that we can `put` and `get` unique values out of
-** StackOverflow: https://https://stackoverflow.com/questions/12670292/get-an-item-from-a-java-set/[Get an item from a Java Set]
+** A `Set` of unique values that we can `put` and `get` values out of
+** StackOverflow: https://stackoverflow.com/questions/12670292/get-an-item-from-a-java-set/[Get an item from a Java Set]
 * What is a Pool useful for?
 ** Reducing the number of duplicate values of a specific set of data in memory
 ** Reusing references to a shared value (e.g. City) across many instances (e.g. Conference)

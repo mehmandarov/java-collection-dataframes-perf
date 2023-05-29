@@ -2,9 +2,9 @@
 
 ---
 
-* A Cache provides lookups by some keys or via indexes
+* A Cache provides lookups by some keys or via indexes (e.g. String -> Object)
 ** Useful for complex object types to build direct relationships in an object graph
-* A Pool returns a unique version of something based a provided equal something
+* A Pool returns a unique version of something using the same type for lookup (String -> String)
 ** Useful for reducing duplicate instances of simple immutable types
 * What objects were cached in `ConferenceExplorerer` and how did this help?
 ** Country is cached and lookups provided by country name

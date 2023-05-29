@@ -2,7 +2,7 @@
 
 ---
 
-image:assets/immutablelist_comparison.jpg[ImmutableList Comparison]
+image:assets/small_immutablelist_cost.png[ImmutableList Comparison]
 
 * *Recommendation*: If you have a lot of small immutable collections, consider using Eclipse Collections
 
