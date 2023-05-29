@@ -4,15 +4,13 @@ import org.eclipse.collections.api.factory.primitive.LongObjectMaps;
 import org.eclipse.collections.api.map.primitive.MutableLongObjectMap;
 import org.eclipse.collections.api.set.primitive.MutableLongSet;
 import org.eclipse.collections.impl.list.primitive.LongInterval;
-import org.junit.jupiter.api.Test;
 import org.openjdk.jol.info.GraphLayout;
 
 import java.util.*;
 
 public class MapOfLongToSetOfLongTest
 {
-    @Test
-    public void maps()
+    public static void main(String[] args)
     {
         PrimitiveIterator.OfLong random1 = new Random(0L).longs(10_000L, 2_000_000L).iterator();
         Map<Long, Set<Long>> map = new HashMap<>();
