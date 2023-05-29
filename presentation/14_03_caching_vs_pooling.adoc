@@ -7,6 +7,7 @@
 * A Pool returns a unique version of something based a provided equal something
 ** Useful for reducing duplicate instances of simple immutable types
 * What objects were cached in `ConferenceExplorerer` and how did this help?
+** Country is cached and lookups provided by country name
 ** For 1 Million Generated conferences
 
 [width=100%]
