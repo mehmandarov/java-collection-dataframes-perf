@@ -24,7 +24,9 @@ public class ConferenceExplorerMemoryTest
             graphImmutableSetEC(size);
             graphMutableListEC(size);
             graphImmutableListEC(size);
+            graphMutableSetJava(size);
             graphImmutableSetJava(size);
+            graphMutableListJava(size);
             graphImmutableListJava(size);
         }
     }
@@ -42,6 +44,22 @@ public class ConferenceExplorerMemoryTest
         Pools.clearPools();
         example.nativejava.conferences.immutable.set.ConferenceExplorer.setCSVSize(size);
         var nativeJavaImmutableSetCE = new example.nativejava.conferences.immutable.set.ConferenceExplorer(2023);
+        System.out.println(GraphLayout.parseInstance(nativeJavaImmutableSetCE).toFootprint());
+    }
+
+    private static void graphMutableListJava(int size)
+    {
+        Pools.clearPools();
+        example.nativejava.conferences.mutable.list.ConferenceExplorer.setCSVSize(size);
+        var nativeJavaImmutableListCE = new example.nativejava.conferences.mutable.list.ConferenceExplorer(2023);
+        System.out.println(GraphLayout.parseInstance(nativeJavaImmutableListCE).toFootprint());
+    }
+
+    private static void graphMutableSetJava(int size)
+    {
+        Pools.clearPools();
+        example.nativejava.conferences.mutable.set.ConferenceExplorer.setCSVSize(size);
+        var nativeJavaImmutableSetCE = new example.nativejava.conferences.mutable.set.ConferenceExplorer(2023);
         System.out.println(GraphLayout.parseInstance(nativeJavaImmutableSetCE).toFootprint());
     }
 
