@@ -3,15 +3,19 @@
 ---
 
 * Worked on an in-memory Financial Serices Java application that didn't fit in 32-bit memory space
-** Problem: Millions of small `List`, `Set`, `Map` instances created with default sized arrays
-** *Solution 1*: Roll our own "small size" Java collections
+** Mission: Fit 6 gigabytes of stuff in 4 gigabytes of space
+** _In the face of overwhelming odds, I'm left with only one option. I'm gonna have to science the $%*# out of this._
+*** -Mark Watney, from _The Martian_
+* Problem: Millions of small `List`, `Set`, `Map` instances created with default sized arrays
+** *Solution*: Roll our own "small size" Java collections
 * Software problem (accessible memory) morphed into hardware problem (available memory)
 ** 64-bit JDK 1.4 release initially gave some relief, but increased total heap size
-** https://www.baeldung.com/jvm-compressed-oops[Compressed OOPS] gave some relief for large heaps <32 gig and eventually <64 gig
-*** This creates a "sweet spot" threshold with cost of 32-bit rerences (4 bytes) vs. 64-bit references (8 bytes)
-** *Solution 2*: Roll our own memory-efficient mutable `Set`, `Map`, `List`
-** *Solution 3*: Primitive collections were  added to Eclipse Collections
-
+** https://www.baeldung.com/jvm-compressed-oops[Compressed OOPS] allowed 32-bit references (4 bytes) in 64-bit heaps
+*** Created a "sweet spot" threshold for large heaps <32 gig and eventually <64 gig
+** *Solution*: Roll our own memory-efficient mutable `Set`, `Map`, `List`
+** *Solution*: Built primitive collections for `List`, `Set`, `Stack`, `Bag`, `Map`
+* Slides: link:http://wiki.jvmlangsummit.com/images/c/c2/Raab_Collections_Design.pdf[JVM Language Summit 2012] - "A Java collections framework design - GS Collections explained"
+** GS Collections open sourced in 2012, migrated to Eclipse Foundation as Eclipse Collections in 2015
 
 
 link:toc.adoc[⬆️ TOC] /
