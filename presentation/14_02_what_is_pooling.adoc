@@ -1,0 +1,48 @@
+=== What is Pooling?
+
+---
+
+* Pool
+** A `Set` of unique values that we can `put` and `get` unique values out of
+** StackOverflow: https://https://stackoverflow.com/questions/12670292/get-an-item-from-a-java-set/[Get an item from a Java Set]
+* What is a Pool useful for?
+** Reducing the number of duplicate values of a specific set of data in memory
+** Reusing references to a shared value (e.g. City) across many instances (e.g. Conference)
+* What objects were pooled in `Conference` and how did this help?
+** For 1 Million Generated conferences
+
+[width=100%]
+[cols="5a,5a,5a,5a"]
+|====
+| *Field*
+| *Type*
+| *Reference Count*
+| *Unique Instances w/ Pool*
+| city
+| String
+| 1,000,000
+| 6
+| startDate
+| LocalDate
+| 1,000,000
+| 364
+| endDate
+| LocalDate
+| 1,000,000
+| 364
+| sessionTypes
+| * ImmutableSingletonSet
+* ImmutableDoubletonSet
+* ImmutableTripletonSet
+| * 375,241
+* 541,996
+* 82,763
+| * 3
+* 3
+* 1
+|====
+
+
+link:toc.adoc[⬆️ TOC] /
+link:./14_conference_explorer_class.adoc[⬅️ Conference Explorer] /
+link:./15_conference_explorer_group_by_country.adoc[➡️ ConferenceExplorer - Group by Country] 🐢

@@ -1,0 +1,30 @@
+=== Caching vs. Pooling?
+
+---
+
+* A Cache provides lookups by some keys or via indexes
+** Useful for complex object types to build direct relationships in an object graph
+* A Pool returns a unique version of something based a provided equal something
+** Useful for reducing duplicate instances of simple immutable types
+* What objects were cached in `ConferenceExplorerer` and how did this help?
+** For 1 Million Generated conferences
+
+[width=100%]
+[cols="5a,5a,5a,5a,5a"]
+|====
+| *Field*
+| *Type*
+| *Lookup Type*
+| *Reference Count*
+| *Unique Instances*
+| country
+| Country
+| String
+| 1,000,000
+| 7
+|====
+
+
+link:toc.adoc[⬆️ TOC] /
+link:./14_conference_explorer_class.adoc[⬅️ Conference Explorer] /
+link:./15_conference_explorer_group_by_country.adoc[➡️ ConferenceExplorer - Group by Country] 🐢
