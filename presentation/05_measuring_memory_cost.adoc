@@ -2,8 +2,7 @@
 
 ---
 
-* Java Object Layout (JOL)
-** link:https://openjdk.org/projects/code-tools/jol/[OpenJDK Code Tools Project]
+* Java Object Layout (JOL) - link:https://openjdk.org/projects/code-tools/jol/[OpenJDK Code Tools Project]
 ** _JOL (Java Object Layout) is the tiny toolbox to analyze object layout schemes in JVMs. These tools are using Unsafe, JVMTI, and Serviceability Agent (SA) heavily to decoder the actual object layout, footprint, and references. This makes JOL much more accurate than other tools relying on heap dumps, specification assumptions, etc._
 [source,xml]
 ----
@@ -20,7 +19,7 @@
 ** Boxed vs. Primitive
 ** Mutable vs. Immutable
 ** Pooling Data
-** Rows (Objects) vs. Columns (Data)
+** Row-based vs. Column-based structures
 ** The Future of Java
 
 link:toc.adoc[⬆️ TOC] /
