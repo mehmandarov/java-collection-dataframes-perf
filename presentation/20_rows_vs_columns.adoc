@@ -15,7 +15,7 @@
 * Column-based structures (e.g. DataFrame)
 ** Advantages
 *** Object header cost per column
-*** Great compression, cache locality and performance with primitive arrays
+*** Great compression, cache locality and performance especially with primitive arrays
 ** Challenges
 *** Tuning limited to available column types
 **** DataFrame-EC currently only has Long value type for integral values
