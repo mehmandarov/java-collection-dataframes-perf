@@ -11,6 +11,7 @@
 *** Object alignment cost - 8 bytes
 **** Note: An empty object costs 16 bytes due to object alignment on 64-bit JVM
 **** First reference is free which is why both `EmptyList` and `SingletonList` cost 16 bytes
+*** Article: https://shipilev.net/jvm/anatomy-quarks/24-object-alignment/[Object Alignment] by Aleksey Shipilëv
 * Column-based structures (e.g. DataFrame)
 ** Advantages
 *** Object header cost per column
