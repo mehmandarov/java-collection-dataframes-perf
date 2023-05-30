@@ -1,4 +1,4 @@
-=== Caching vs. Pooling?
+=== Caching vs. Pooling
 
 ---
 
@@ -27,5 +27,5 @@
 
 
 link:toc.adoc[⬆️ TOC] /
-link:./14_conference_explorer_class.adoc[⬅️ Conference Explorer] /
-link:./15_conference_explorer_group_by_country.adoc[➡️ ConferenceExplorer - Group by Country] 🐢
+link:./17_what_is_pooling.adoc[⬅️ What is Pooling?] /
+link:./20_rows_vs_columns.adoc[➡️ Row-based vs. Column-based Structures] 🐢

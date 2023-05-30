@@ -7,14 +7,16 @@
 |====
 | link:../code/comparison/src/main/java/example/nativejava/conferences/immutable/set/Conference.java[Conference Record]
 |
-[source,java,linenums,highlight=1..4]
+[source,java,linenums,highlight=1..8]
 ----
 public record Conference(
-        String eventName,
-        Country country,
-        String city,
-        LocalDate startDate, LocalDate endDate,
-        Set<SessionType> sessionTypes)
+    String eventName,
+    Country country,
+    String city,
+    LocalDate startDate, LocalDate endDate,
+    Set<SessionType> sessionTypes,
+    int trackCount, int sessionCount,
+    int speakerCount, int cost)
 ----
 | link:../code/comparison/src/main/java/example/nativejava/conferences/immutable/set/ConferenceExplorer.java[Java Streams]
 |
@@ -45,7 +47,7 @@ public class ConferenceExplorer {
 * Reads in conferences and countries from two CSV files and filters the data for a specified year
 * We gave https://github.com/mehmandarov/java-collection-dataframes[talks at Devnexus 2023 and Devoxx Greece 2023] on the API and tests for Conference Explorer
 * This talk focuses on the data structures and data and measuring what occupies memory at scale
-* What would happen if we loaded 1 million conferences into memory? Let's find out!
+* What would it cost to load 1 million conferences into memory? Let's find out!
 
 link:toc.adoc[⬆️ TOC] /
 link:./13_the_problem_what_to_choose_details.adoc[⬅️ What to Choose? In detail.] /

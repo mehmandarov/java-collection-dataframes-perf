@@ -2,10 +2,9 @@ package example.eclipse.collections.conferences.immutable.list;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import example.Pools;
-import io.github.vmzakharov.ecdataframe.dsl.value.ValueType;
 import org.eclipse.collections.api.list.ImmutableList;
-import org.eclipse.collections.api.set.Pool;
-import org.eclipse.collections.impl.set.mutable.UnifiedSet;
+import org.eclipse.collections.api.tuple.Twin;
+import org.eclipse.collections.impl.tuple.Tuples;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -15,17 +14,12 @@ public record Conference(
         String eventName,
         Country country,
         String city,
-        LocalDate startDate,
-        LocalDate endDate,
+        Twin<LocalDate> dates, // Replaced separate startDate and endDate LocalDate fields
         ImmutableList<SessionType> sessionTypes,
-        int trackCount,
-        int sessionCount,
-        int speakerCount,
-        int cost)
-//        short trackCount,  // Save 8 byes per Conference instance with this change
-//        short sessionCount,
-//        short speakerCount,
-//        short cost)
+        byte trackCount,    // Replace int with byte
+        short sessionCount, // Replace int with short
+        short speakerCount, // Replace int with short
+        short cost)         // Replace int with short
 {
     public Conference(String eventName,
                       String country,
@@ -41,27 +35,22 @@ public record Conference(
         this(eventName,
                 Country.getByName(country),
                 Pools.poolString(city),
-                Pools.poolDate(LocalDate.parse(startDate)),
-                Pools.poolDate(LocalDate.parse(endDate)),
+                Pools.poolTwin(Tuples.twin(Pools.poolDate(LocalDate.parse(startDate)), Pools.poolDate(LocalDate.parse(endDate)))),
                 Pools.poolImmutableList(SessionType.listFromString(sessionTypes)),
-                trackCount,
-                sessionCount,
-                speakerCount,
-                cost);
-//                (short) trackCount,   // Save 8 byes per Conference instance with this change
-//                (short) sessionCount,
-//                (short) speakerCount,
-//                (short) cost);
+                (byte) trackCount,
+                (short) sessionCount,
+                (short) speakerCount,
+                (short) cost);
     }
 
     public long durationInDays()
     {
-        return ChronoUnit.DAYS.between(this.startDate, this.endDate.plusDays(1L));
+        return ChronoUnit.DAYS.between(this.dates.getOne(), this.dates.getTwo().plusDays(1L));
     }
 
     public long daysToEvent()
     {
-        return ChronoUnit.DAYS.between(LocalDate.now(), this.startDate);
+        return ChronoUnit.DAYS.between(LocalDate.now(), this.dates.getOne());
     }
 
     @JsonIgnore
@@ -90,6 +79,16 @@ public record Conference(
     @JsonIgnore
     public Month getMonth()
     {
-        return this.startDate.getMonth();
+        return this.dates.getOne().getMonth();
+    }
+
+    public LocalDate startDate()
+    {
+        return this.dates.getOne();
+    }
+
+    public LocalDate endDate()
+    {
+        return this.dates.getTwo();
     }
 }

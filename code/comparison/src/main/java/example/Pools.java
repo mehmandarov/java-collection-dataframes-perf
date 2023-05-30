@@ -3,6 +3,8 @@ package example;
 import org.eclipse.collections.api.list.ImmutableList;
 import org.eclipse.collections.api.set.ImmutableSet;
 import org.eclipse.collections.api.set.Pool;
+import org.eclipse.collections.api.tuple.Pair;
+import org.eclipse.collections.api.tuple.Twin;
 import org.eclipse.collections.impl.set.mutable.UnifiedSet;
 
 import java.time.LocalDate;
@@ -18,6 +20,8 @@ public class Pools
     private static Pool<ImmutableList<?>> IMMUTABLE_LIST_POOL = new UnifiedSet<>();
     private static Pool<Set<?>> SET_POOL = new UnifiedSet<>();
     private static Pool<List<?>> LIST_POOL = new UnifiedSet<>();
+    private static Pool<Twin<?>> TWIN_POOL = new UnifiedSet<>();
+    private static Pool<Pair<?, ?>> PAIR_POOL = new UnifiedSet<>();
 
     public static void enablePooling()
     {
@@ -37,6 +41,8 @@ public class Pools
         IMMUTABLE_LIST_POOL.clear();
         SET_POOL.clear();
         LIST_POOL.clear();
+        TWIN_POOL.clear();
+        PAIR_POOL.clear();
     }
 
     public static String poolString(String value)
@@ -89,6 +95,24 @@ public class Pools
         if (POOLING_ENABLED)
         {
             return (R) LIST_POOL.put(value);
+        }
+        return value;
+    }
+
+    public static <R extends Twin<?>> R poolTwin(R value)
+    {
+        if (POOLING_ENABLED)
+        {
+            return (R) TWIN_POOL.put(value);
+        }
+        return value;
+    }
+
+    public static <R extends Pair<?, ?>> R poolPair(R value)
+    {
+        if (POOLING_ENABLED)
+        {
+            return (R) PAIR_POOL.put(value);
         }
         return value;
     }

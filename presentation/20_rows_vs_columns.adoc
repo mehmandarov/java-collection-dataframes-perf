@@ -1,0 +1,26 @@
+=== Row-based vs. Column-based Structures
+
+---
+
+* Row-based structures (e.g. Objects in Collections)
+** Advantages
+*** Custom tuning based on understanding of the data
+*** Custom pooling and caching possible
+** Challenges
+*** Object header cost per row - 12 bytes
+*** Object alignment cost - 8 bytes
+**** Note: An empty object costs 16 bytes due to object alignment on 64-bit JVM
+**** First reference is free which is why both `EmptyList` and `SingletonList` cost 16 bytes
+* Column-based structures (e.g. DataFrame)
+** Advantages
+*** Object header cost per column
+*** Great compression, cache locality and performance with primitive arrays
+** Challenges
+*** Tuning limited to available column types
+**** DataFrame-EC currently only has Long value type for integral values
+
+
+
+link:toc.adoc[⬆️ TOC] /
+link:./19_caching_vs_pooling.adoc[⬅️ Caching vs. Pooling] /
+link:./21_ce_memory_fine_tuning.adoc[➡️ ConferenceExplorer - Fine Tuning Memory] 🐢

@@ -11,7 +11,7 @@ public class ConferenceExplorerMemoryTest
     {
         int[] sizes = {1_000_000};
 
-        Pools.disablePooling();
+        Pools.enablePooling();
         for (int size : sizes)
         {
             SyntheticDataGenerator.generateSyntheticData(size, "conferences");

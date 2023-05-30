@@ -18,4 +18,4 @@
 
 link:toc.adoc[⬆️ TOC] /
 link:./19_conference_explorer_sum_by.adoc[⬅️ Conference Explorer - Sum conference days by Country] /
-link:./21_eclipse_collections.adoc[➡️ Eclipse Collections] 🐢
+link:./26_eclipse_collections.adoc[➡️ Eclipse Collections] 🐢

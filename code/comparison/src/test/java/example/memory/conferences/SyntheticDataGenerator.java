@@ -47,8 +47,8 @@ public class SyntheticDataGenerator
             String sessionTypeListString = randomSessionTypes(sessionTypes);
 
             String trackCount = String.valueOf(random.nextInt(1, 10));
-            String sessionCount = String.valueOf(random.nextInt(50, 200));
-            String speakerCount = String.valueOf(random.nextInt(50, 200));
+            String sessionCount = String.valueOf(random.nextInt(50, 250));
+            String speakerCount = String.valueOf(random.nextInt(50, 250));
             String cost = String.valueOf(random.nextInt(500, 3000));
 
             String[] row = {eventName, country, city, startDate, endDate, sessionTypeListString, trackCount, sessionCount, speakerCount, cost};
