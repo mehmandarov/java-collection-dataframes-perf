@@ -1,4 +1,4 @@
-=== Conference Explorer - Memory Cost Comparison
+=== Conference Explorer - Memory Cost Comparison - Pooling Data
 
 ---
 
@@ -10,4 +10,4 @@ image:assets/conferences_with_pooling.png[Conference Explorer Comparison]
 
 link:toc.adoc[⬆️ TOC] /
 link:./14_conference_explorer_class.adoc[⬅️ Conference Explorer] /
-link:./15_conference_explorer_group_by_country.adoc[➡️ ConferenceExplorer - Group by Country] 🐢
+link:./17_what_is_pooling.adoc[➡️ What is Pooling?] 🐢

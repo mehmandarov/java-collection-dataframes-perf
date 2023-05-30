@@ -19,6 +19,7 @@
 * Memory Considerations
 ** Boxed vs. Primitive
 ** Mutable vs. Immutable
+** Pooling Data
 ** Rows (Objects) vs. Columns (Data)
 ** The Future of Java
 

@@ -47,5 +47,5 @@
 
 
 link:toc.adoc[⬆️ TOC] /
-link:./14_02_ce_memory_cost_pooling.adoc[⬅️ Conference Explorer - Memory Cost - Pooling] /
-link:./14_04_caching_vs_pooling.adoc[➡️ Caching vs. Pooling] 🐢
+link:./16_ce_memory_cost_pooling.adoc[⬅️ Conference Explorer - Memory Cost - Pooling] /
+link:./19_caching_vs_pooling.adoc[➡️ Caching vs. Pooling] 🐢
