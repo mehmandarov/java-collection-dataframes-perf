@@ -13,10 +13,11 @@ Voxxed Days Bucharest,Romania,Bucharest,2023-03-22,2023-03-24,"[talks,workshops]
 Jfokus,Sweden,Stockholm,2023-02-06,2023-02-08,"[talks,workshops]",4,50,75,2000
 jChampionsConf,WWW,Online event,2023-01-19,2023-01-24,"[talks,]",4,50,75,2000
 |===
-* 1 Million Conferences - 87.6 MB on Disk, 10 Million Conferences - 876.4MB on Disk
-* Event names are random
-* Fixed set of Country and City names
-* Dates limited to 2023
+* Conferences: 1 Million - 87.6 MB on Disk, 10 Million - 876.4MB on Disk, 25 Millon - 2.19GB on Disk
+* About the data
+** Event names are randomly generated
+** Fixed set of Country and City names
+** Dates limited to 2023
 
 link:toc.adoc[⬆️ TOC] /
 link:./03_the_problem_today.adoc[⬅️ The Problem] /
