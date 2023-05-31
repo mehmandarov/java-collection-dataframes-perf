@@ -23,5 +23,5 @@
 
 
 link:toc.adoc[⬆️ TOC] /
-link:./19_caching_vs_pooling.adoc[⬅️ Caching vs. Pooling] /
+link:./A4_caching_vs_pooling.adoc[⬅️ Caching vs. Pooling] /
 link:./21_ce_memory_fine_tuning.adoc[➡️ Conference Explorer - Fine Tuning Memory] 🐢

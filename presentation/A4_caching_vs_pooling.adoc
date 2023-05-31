@@ -27,5 +27,5 @@
 
 
 link:toc.adoc[⬆️ TOC] /
-link:./17_what_is_pooling.adoc[⬅️ What is Pooling?] /
-link:./20_rows_vs_columns.adoc[➡️ Row-based vs. Column-based Structures] 🐢
+link:./A3_memory_footprint_boxed_vs_primitive_map_of_sets.adoc[⬅️ Memory Footprint - Boxed vs. Primitive Map of Sets] /
+link:./toc.adoc[➡️ Table of Contents] 🐢

@@ -8,9 +8,9 @@
 * What is a Pool useful for?
 ** Reducing the number of duplicate values of a specific set of data in memory
 ** Reusing references to a shared value (e.g. City) across many instances (e.g. Conference)
+** JDK Pooling - `String.intern()`, `valueOf()` methods on Boxed Wrappers (`Boolean`, `Short`, `Integer`, `Long`)
 * DataFrame-EC uses Eclipse Collections `UnifiedSet` to pool data for each column
-** This resulted in significant memory savings for our data without us having to do anything
-* We manually pooled the following fields during `Conference` record loading for Java and Eclipse Collections solutions
+* We manually pooled the following fields for `Conference` records
 
 
 [width=100%]
@@ -47,4 +47,4 @@
 
 link:toc.adoc[⬆️ TOC] /
 link:./16_ce_memory_cost_pooling.adoc[⬅️ Conference Explorer - Memory Cost - Pooling] /
-link:./19_caching_vs_pooling.adoc[➡️ Caching vs. Pooling] 🐢
+link:./20_rows_vs_columns.adoc[➡️ Rows vs. Columns] 🐢
