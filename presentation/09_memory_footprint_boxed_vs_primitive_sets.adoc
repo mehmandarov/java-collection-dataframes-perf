@@ -1,4 +1,4 @@
-=== Memory Footprint - Boxed vs. Primitive Sets
+=== Memory Footprint - Boxed vs. Alternative vs. Primitive Sets
 
 ---
 
@@ -50,5 +50,5 @@ org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@626abbd0d footprin
 * *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
 
 link:toc.adoc[⬆️ TOC] /
-link:./08_memory_footprint_boxed_vs_primitive_lists.adoc[⬅️ Memory Footpring - Boxed vs. Primitive Lists] /
-link:./10_mutable_vs_immutable_lists.adoc[➡️ Memory Footprint - Mutable vs. Immutable Lists] 🐢
+link:./07_memory_footprint_boxed_vs_primitive.adoc[⬅️ Memory Footprint - Boxed vs. Primitive] /
+link:./11_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable Lists] 🐢
