@@ -2,9 +2,10 @@
 
 ---
 
-image:assets/conferences_memory_ten_million.png[Conference Explorer Comparison]
+image:assets/conferences_memory_25_million.png[Conference Explorer Comparison]
 
-* At ten million conferences, we see the memory savings scaling well
+* *Issue:* Out of memory error loading via Jackson CSV
+** Replaced call to `MappingIterator.readAll()` with using as `Iterator` directly
 * *Recommendation:* Understand your data and analyze using JOL to find opportunities for memory savings
 
 link:toc.adoc[⬆️ TOC] /

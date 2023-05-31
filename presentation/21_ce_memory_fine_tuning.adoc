@@ -11,4 +11,4 @@ image:assets/conferences_tuning.png[Conference Explorer Comparison]
 
 link:toc.adoc[⬆️ TOC] /
 link:./20_rows_vs_columns.adoc[⬅️ Row-based vs. Column-based Structures] /
-link:./22_ce_memory_cost_ten_million.adoc[➡️ Conference Explorer - 10 Million Rows] 🐢
+link:./22_ce_memory_cost_25_million.adoc[➡️ Conference Explorer - 10 Million Rows] 🐢
