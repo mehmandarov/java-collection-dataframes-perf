@@ -1,4 +1,4 @@
-=== Conference Explorer - Memory Cost - 10 Million Conferences
+=== Conference Explorer - Memory Cost - Scaling Conferences x25
 
 ---
 
