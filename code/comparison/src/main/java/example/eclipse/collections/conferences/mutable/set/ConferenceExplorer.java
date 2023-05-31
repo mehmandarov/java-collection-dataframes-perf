@@ -13,7 +13,9 @@ import org.eclipse.collections.api.list.MutableList;
 import org.eclipse.collections.api.map.primitive.ObjectLongMap;
 import org.eclipse.collections.api.multimap.set.MutableSetMultimap;
 import org.eclipse.collections.api.set.MutableSet;
+import org.eclipse.collections.impl.list.mutable.FastList;
 import org.eclipse.collections.impl.utility.LazyIterate;
+import org.eclipse.collections.impl.utility.internal.IteratorIterate;
 
 import java.io.IOException;
 import java.net.URL;
@@ -67,7 +69,7 @@ public class ConferenceExplorer
                         .with(headerSchema)
                         .readValues(url))
         {
-            this.createConferencesFromList(initialFilter, it.readAll());
+            this.createConferencesFromList(initialFilter, it);
         }
         catch (IOException e)
         {
@@ -75,9 +77,10 @@ public class ConferenceExplorer
         }
     }
 
-    private void createConferencesFromList(Predicate<Conference> initialFilter, List<Map<String, String>> lists)
+    private void createConferencesFromList(Predicate<Conference> initialFilter, MappingIterator<Map<String, String>> lists)
     {
-        this.conferences = LazyIterate.collect(lists, this::createConference)
+        this.conferences = IteratorIterate.collect(lists, this::createConference, FastList.newList())
+                .asLazy()
                 .select(initialFilter)
                 .toSet();
     }

@@ -13,6 +13,8 @@ import java.time.Month;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 public class ConferenceExplorer
 {
@@ -60,7 +62,7 @@ public class ConferenceExplorer
                         .with(headerSchema)
                         .readValues(url))
         {
-            this.createConferencesFromList(initialFilter, it.readAll());
+            this.createConferencesFromList(initialFilter, it);
         }
         catch (IOException e)
         {
@@ -68,9 +70,11 @@ public class ConferenceExplorer
         }
     }
 
-    private void createConferencesFromList(Predicate<Conference> initialFilter, List<Map<String, String>> lists)
+    private void createConferencesFromList(Predicate<Conference> initialFilter, MappingIterator<Map<String, String>> mappingIterator)
     {
-        this.conferences = lists.stream()
+        Iterable<Map<String, String>> iterable = () -> mappingIterator;
+        Stream<Map<String, String>> stream = StreamSupport.stream(iterable.spliterator(), false);
+        this.conferences = stream
                 .map(this::createConference)
                 .filter(initialFilter)
                 .collect(Collectors.toSet());
