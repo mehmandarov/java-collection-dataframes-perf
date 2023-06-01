@@ -7,9 +7,8 @@
 ** How can we measure memory efficiency of data structures?
 ** What decisions can affect memory efficiency?
 ** Problem: Rows vs. Columns - which is better?
-* What options do we have?
+* What libraries will we explore?
 ** Java Collections / Streams
-*** Part of Java standard library
 ** link:https://github.com/eclipse/eclipse-collections[Eclipse Collections]
 *** Open Sourced by Goldman Sachs in 2012 as GS Collections
 *** Open Source library maintained at Eclipse Foundation since 2015
