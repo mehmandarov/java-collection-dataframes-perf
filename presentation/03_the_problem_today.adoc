@@ -16,14 +16,9 @@
 ** link:https://github.com/vmzakharov/dataframe-ec[DataFrame-EC]
 *** Open Source library created by Vladimir Zakharov
 *** Built on top of Eclipse Collections
-* *NOTE:* This talk focuses on measuring memory cost and showing in-memory savings strategies, techniques and tricks
-** *Disclaimer:* Sometimes memory savings will have positive or negative performance impacts. YMMV.
-** You need to separately learn how to measure performance for your application and libraries
-====
-
-====
-
-
+* *NOTE:* This talk focuses on measuring memory cost and memory efficiency strategies, techniques and tricks
+** *Disclaimer:* Memory savings can result in positive or negative performance impacts. YMMV.
+** Measure performance of your applications or libraries after making any memory efficiency changes
 
 link:toc.adoc[⬆️ TOC] /
 link:./02_the_memory_problem_2004.adoc[⬅️ The problem circa 2004] /
