@@ -1,4 +1,4 @@
-== Performance and Scale
+== Performance and Scale in Java
 === Domain-Oriented Objects vs Tabular Data Structures
 
 image:assets/tobias-fischer-unsplash.jpg[Title Picture,700]
