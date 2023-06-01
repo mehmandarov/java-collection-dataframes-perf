@@ -15,13 +15,7 @@
 * Baeldung Article: link:https://www.baeldung.com/java-memory-layout[Memory Layout of Objects in Java]
 * StackOverflow: link:https://stackoverflow.com/questions/76130264/does-java-object-layout-work-with-java-records[Does Java Object Layout work with Java Records?]
 ** Use VM Flag: ```-Djol.magicFieldOffset=true```
-* Memory Considerations
-** Boxed vs. Primitive
-** Mutable vs. Immutable
-** Pooling Data
-** Row-based vs. Column-based structures
-** The Future of Java
 
 link:toc.adoc[⬆️ TOC] /
 link:./04_the_problem_csv_data_to_load.adoc[⬅️ CSV Data to Load] /
-link:./06_memory_boxed_vs_primitive.adoc[➡️ Memory Cost - Boxed vs. Primitive] 🐢
+link:./05_01_memory_considerations.adoc[➡️ Memory Considerations] 🐢

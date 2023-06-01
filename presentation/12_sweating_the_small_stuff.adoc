@@ -10,4 +10,4 @@ image:assets/small_immutablelist_cost.png[ImmutableList Comparison]
 
 link:toc.adoc[⬆️ TOC] /
 link:./11_mutable_vs_immutable_sets.adoc[⬅️ Memory Footprint - Mutable vs. Immutable Sets] /
-link:./13_the_problem_what_to_choose_details.adoc[➡️ What to choose details?] 🐢
+link:./13_the_problem_what_to_choose_details.adoc[➡️ What to choose?] 🐢
