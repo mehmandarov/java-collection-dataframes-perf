@@ -40,5 +40,5 @@ example.memory.boxing.MinMaxPrimitivesPlain@3514a4c0d footprint:
 * *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
 
 link:toc.adoc[⬆️ TOC] /
-link:./06_memory_boxed_vs_primitive.adoc[⬅️ Memory Cost - Boxed vs. Primitive] /
+link:./08_memory_boxed_vs_primitive.adoc[⬅️ Memory Cost - Boxed vs. Primitive] /
 link:./09_memory_footprint_boxed_vs_primitive_sets.adoc[➡️ Memory Footprint - Boxed vs. Alternative vs. Primitive Sets] 🐢

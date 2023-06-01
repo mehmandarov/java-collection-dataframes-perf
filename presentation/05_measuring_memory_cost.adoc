@@ -18,4 +18,4 @@
 
 link:toc.adoc[⬆️ TOC] /
 link:./04_the_problem_csv_data_to_load.adoc[⬅️ CSV Data to Load] /
-link:./05_01_memory_considerations.adoc[➡️ Memory Considerations] 🐢
+link:./06_memory_considerations.adoc[➡️ Memory Considerations] 🐢
