@@ -10,7 +10,8 @@
 ** link:25_java_streams.adoc[Java Streams]
 ** link:26_eclipse_collections.adoc[Eclipse Collections]
 ** link:27_data_frame_ec.adoc[DataFrame-EC]
-* link:28_summary.adoc[Summary]
+* link:28_the_future_of_java.adoc[What will the future bring?]
+* link:29_summary.adoc[Summary]
 * link:A0_appendix.adoc[Appendix]
 
 ---
