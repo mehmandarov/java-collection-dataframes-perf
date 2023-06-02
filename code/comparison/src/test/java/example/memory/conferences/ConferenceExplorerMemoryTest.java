@@ -20,6 +20,7 @@ public class ConferenceExplorerMemoryTest
             System.out.println("==============");
 
             graphDataFrameEC(size);
+            graphTableSaw(size);
             graphMutableSetEC(size);
             graphImmutableSetEC(size);
             graphMutableListEC(size);
@@ -29,6 +30,14 @@ public class ConferenceExplorerMemoryTest
             graphMutableListJava(size);
             graphImmutableListJava(size);
         }
+    }
+
+    private static void graphTableSaw(int size)
+    {
+        Pools.clearPools();
+        example.jtablesaw.conferences.ConferenceExplorer.setCSVSize(size);
+        var tableSawCE = new example.jtablesaw.conferences.ConferenceExplorer(2023);
+        System.out.println(GraphLayout.parseInstance(tableSawCE).toFootprint());
     }
 
     private static void graphImmutableListJava(int size)
