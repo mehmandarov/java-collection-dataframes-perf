@@ -1,0 +1,17 @@
+=== The problems with in-memory Java architectures after 2004
+
+---
+
+==== Software problem (accessible memory) -> Hardware problem (available memory)
+* 64-bit JDK 1.4 release initially gave some relief, but increased total heap size
+* https://www.baeldung.com/jvm-compressed-oops[Compressed OOPS] allowed 32-bit references (4 bytes) in 64-bit heaps since JDK 1.6 (2006)
+** Created a "sweet spot" threshold for large heaps <32 gig and eventually <64 gig
+* *Solutions*:
+** Roll our own memory-efficient mutable `Set`, `Map`, `List`
+** Built primitive collections for `List`, `Set`, `Stack`, `Bag`, `Map`
+
+
+
+link:toc.adoc[⬆️ TOC] /
+link:./02_the_memory_problem_2004.adoc[⬅️ Memory Problem circa 2004] /
+link:./03_the_problem_today.adoc[➡️ The problem today] 🐢
