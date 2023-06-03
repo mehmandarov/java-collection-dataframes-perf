@@ -10,15 +10,9 @@
 * What libraries will we explore?
 ** Java Collections / Streams
 ** link:https://github.com/eclipse/eclipse-collections[Eclipse Collections]
-*** Open Sourced by Goldman Sachs in 2012 as GS Collections
-*** Open Source library maintained at Eclipse Foundation since 2015
 ** link:https://github.com/vmzakharov/dataframe-ec[DataFrame-EC]
-*** Open Source library created by Vladimir Zakharov
-*** Built on top of Eclipse Collections
 * *NOTE:* This talk focuses on measuring memory cost and memory efficiency strategies, techniques and tricks
-** *Disclaimer:* Memory savings can result in positive or negative performance impacts. YMMV.
-** Measure performance of your applications or libraries after making any memory efficiency changes
 
 link:toc.adoc[⬆️ TOC] /
-link:./02_the_memory_problem_2004.adoc[⬅️ The problem circa 2004] /
+link:./02_01_the_memory_problem_after_2004.adoc[⬅️ The problem after 2004] /
 link:./04_the_problem_csv_data_to_load.adoc[➡️ CSV Data to Load] 🥷
