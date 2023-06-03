@@ -5,9 +5,6 @@
 [width=100%]
 [cols="5a,5a"]
 |====
-| Class with Boxed Primitives
-|
-Class with Plain Primitives
 |
 [source,java,linenums]
 ----
@@ -55,28 +52,10 @@ class MinMaxPrimitivesPlain
     private double maxDoubleValue;
 }
 ----
-|
-[source,java]
-----
-GraphLayout.parseInstance(
-        new MinMaxPrimitivesBoxed())
-.totalSize()
-----
-|
-[source,java]
-----
-GraphLayout.parseInstance(
-        new MinMaxPrimitivesPlain())
-.totalSize()
-----
-|
-Memory Cost: *368 bytes*
-|
-Memory Cost: *72 bytes*
 |====
 
-* *Recommendation*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
+* *Question*: What is the difference between these two classes?
 
 link:toc.adoc[⬆️ TOC] /
-link:./05_measuring_memory_cost.adoc[⬅️ Measuring memory cost] /
-link:./07_memory_footprint_boxed_vs_primitive.adoc[➡️ Memory Footprint - Boxed vs. Primitive] 🐢
+link:./06_memory_considerations.adoc[⬅️ Memory Considerations] /
+link:./08_memory_footprint_boxed_vs_primitive.adoc[➡️ Memory Footprint - Boxed vs. Primitive] 🐢

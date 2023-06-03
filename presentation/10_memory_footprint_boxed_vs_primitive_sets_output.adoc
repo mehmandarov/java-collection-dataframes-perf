@@ -1,0 +1,42 @@
+=== Memory Footprint - Boxed vs. Alternative vs. Primitive Sets
+
+---
+
+[width=100%]
+[cols="5a"]
+|====
+| Output:
+|
+[source,text,linenums]
+----
+java.util.HashSet@7d20d0bd footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        80        80   [Ljava.util.HashMap$Node;
+        10        16       160   java.lang.Integer
+         1        16        16   java.lang.Object
+         1        48        48   java.util.HashMap
+        10        32       320   java.util.HashMap$Node
+         1        16        16   java.util.HashSet
+        24                 640   (total)
+
+org.eclipse.collections.impl.set.mutable.UnifiedSet@7dfd3c81d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        80        80   [Ljava.lang.Object;
+        10        16       160   java.lang.Integer
+         1        32        32   org.eclipse.collections.impl.set.mutable.UnifiedSet
+        12                 272   (total)
+
+org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@626abbd0d footprint:
+     COUNT       AVG       SUM   DESCRIPTION
+         1        80        80   [I
+         1        40        40   org.eclipse.collections.impl.set.mutable.primitive.IntHashSet
+         2                 120   (total)
+----
+|====
+
+* *Recommendation*: Avoid using java.util.HashSet! It is a memory hog!
+* *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
+
+link:toc.adoc[⬆️ TOC] /
+link:./09_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footprint - Boxed vs. Alternative vs. Primitive Sets] /
+link:./11_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable Lists] 🐢

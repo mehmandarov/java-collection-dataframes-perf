@@ -10,4 +10,4 @@ image:assets/conferences_memory_25_million.png[Conference Explorer Comparison]
 
 link:toc.adoc[⬆️ TOC] /
 link:./21_ce_memory_fine_tuning.adoc[⬅️ Conference Explorer - Fine Tuning Memory] /
-link:./25_java_streams.adoc[➡️ Java Streams] 🐢
+link:./28_the_future_of_java.adoc[➡️ What will the future bring?] 🐢

@@ -26,7 +26,7 @@ image:assets/lego_stack.jpg[assets/lego_stack.jpg,500,float=right]
 ---
 
 link:toc.adoc[⬆️ TOC] /
-link:./08_memory_boxed_vs_primitive.adoc[⬅️ Memory Cost - Boxed vs. Primitive] /
+link:./12_sweating_the_small_stuff.adoc[⬅️ Sweating the Small Stuff] /
 link:./14_conference_explorer_class.adoc[➡️ ConferenceExplorer] 🐢
 
 

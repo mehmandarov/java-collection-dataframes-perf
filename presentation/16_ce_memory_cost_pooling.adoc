@@ -9,5 +9,5 @@ image:assets/conferences_with_pooling.png[Conference Explorer Comparison]
 * *Recommendation:* Understand your data and analyze using JOL or other heap analysis tools
 
 link:toc.adoc[⬆️ TOC] /
-link:./14_conference_explorer_class.adoc[⬅️ Conference Explorer] /
+link:./15_ce_memory_cost_mutable_immutable.adoc[⬅️ Conference Explorer - Memory Cost Comparison - Mutable vs. Immutable] /
 link:./17_what_is_pooling.adoc[➡️ What is Pooling?] 🐢

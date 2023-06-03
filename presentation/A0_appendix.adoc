@@ -21,4 +21,5 @@
 ---
 
 link:./toc.adoc[⬆️ TOC] /
-link:29_summary.adoc[⬅️ Summary] 🥷🐢
+link:29_summary.adoc[⬅️ Summary]
+link:./A1_memory_footprint_boxed_vs_primitive_lists.adoc[➡️ Memory Footprint - Boxed vs. Primitive Lists] 🥷🐢

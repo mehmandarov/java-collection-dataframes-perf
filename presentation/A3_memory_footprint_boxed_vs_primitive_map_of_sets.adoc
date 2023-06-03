@@ -52,5 +52,6 @@ org.eclipse.collections.impl.map.mutable.primitive.LongObjectHashMap@58198813d f
 * *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
 
 link:toc.adoc[⬆️ TOC] /
-link:./A0_appendix.adoc[⬅️ Appendix] /
-link:./00_title.adoc[➡️ Title Slide] 🐢
+link:./A2_mutable_vs_immutable_lists.adoc[⬅️ Memory Footprint - Mutable vs. Immutable Lists] /
+link:./A4_caching_vs_pooling.adoc[➡️ Caching vs. Pooling
+] 🐢
