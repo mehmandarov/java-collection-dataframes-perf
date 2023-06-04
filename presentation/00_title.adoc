@@ -1,13 +1,13 @@
-image:assets/lego.jpg[Title Picture,600, float="right"]
+image:assets/lego.jpg[Title Picture,605, float="right"]
 
-== Performance and Scale in Java
+= Performance and Scale in Java
 === Domain-Oriented Objects vs Tabular Data Structures
-===== QCon New York 2023
+==== QCon New York 2023
 
 ---
 
-====== 🥷 Rustam Mehmandarov -- link:https://twitter.com/rmehmandarov[@RMehmandarov]
-====== 🐢 Donald Raab -- link:https://twitter.com/TheDonRaab[@TheDonRaab]
+===== 🥷 Rustam Mehmandarov -- link:https://twitter.com/rmehmandarov[@RMehmandarov]
+===== 🐢 Donald Raab -- link:https://twitter.com/TheDonRaab[@TheDonRaab]
 
 ---
 
