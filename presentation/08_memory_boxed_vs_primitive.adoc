@@ -57,5 +57,5 @@ class MinMaxPrimitivesPlain
 * *Question*: What is the difference between these two classes?
 
 link:toc.adoc[⬆️ TOC] /
-link:./06_memory_considerations.adoc[⬅️ Memory Considerations] /
-link:./08_memory_footprint_boxed_vs_primitive.adoc[➡️ Memory Footprint - Boxed vs. Primitive] 🐢
+link:./07_memory_considerations.adoc[⬅️ Memory Considerations] /
+link:./09_memory_footprint_boxed_vs_primitive.adoc[➡️ Memory Footprint - Boxed vs. Primitive] 🐢

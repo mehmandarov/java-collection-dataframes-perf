@@ -7,5 +7,5 @@
 * The Future of Java
 
 link:toc.adoc[⬆️ TOC] /
-link:./05_measuring_memory_cost.adoc[⬅️ Measuring Memory Cost in Java] /
-link:./07_memory_boxed_vs_primitive.adoc[➡️ Memory Cost - Boxed vs. Primitive] 🥷
+link:./06_measuring_memory_cost.adoc[⬅️ Measuring Memory Cost in Java] /
+link:./08_memory_boxed_vs_primitive.adoc[➡️ Memory Cost - Boxed vs. Primitive] 🥷

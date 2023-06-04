@@ -1,0 +1,12 @@
+=== Conference Explorer - Memory Cost Comparison - Mutable vs. Immutable
+
+---
+
+image:assets/conferences_mutable_vs_immutable.png[Conference Explorer Comparison]
+
+* *Recommendation:* Consider growing with Mutable data structures with a final trimmed copy to an Immutable data structure
+* *Why are the collection alternatives comparing so badly to DataFrame-EC?*
+
+link:toc.adoc[⬆️ TOC] /
+link:./15_conference_explorer_class.adoc[⬅️ Conference Explorer] /
+link:./17_ce_memory_cost_pooling.adoc[➡️ ConferenceExplorer - Memory Cost - Pooling] 🐢

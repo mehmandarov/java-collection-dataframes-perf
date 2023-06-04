@@ -17,5 +17,5 @@
 ** Use VM Flag: ```-Djol.magicFieldOffset=true```
 
 link:toc.adoc[⬆️ TOC] /
-link:./04_the_problem_csv_data_to_load.adoc[⬅️ CSV Data to Load] /
-link:./06_memory_considerations.adoc[➡️ Memory Considerations] 🐢
+link:./05_the_problem_csv_data_to_load.adoc[⬅️ CSV Data to Load] /
+link:./07_memory_considerations.adoc[➡️ Memory Considerations] 🐢

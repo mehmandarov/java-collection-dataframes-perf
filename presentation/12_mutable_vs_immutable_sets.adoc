@@ -44,5 +44,5 @@ java.util.ImmutableCollections$Set12@247d8aed footprint:
 * *Recommendation*: Build Mutable Sets up and then trim them using Immutable Sets
 
 link:toc.adoc[⬆️ TOC] /
-link:./09_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footprint - Boxed vs. Alternative vs. Primitive Sets] /
-link:./12_sweating_the_small_stuff.adoc[➡️ Sweating the Small Stuff] 🐢
+link:./10_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footprint - Boxed vs. Alternative vs. Primitive Sets] /
+link:./13_sweating_the_small_stuff.adoc[➡️ Sweating the Small Stuff] 🐢

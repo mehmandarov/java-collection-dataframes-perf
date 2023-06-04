@@ -7,7 +7,6 @@
 ** StackOverflow: https://stackoverflow.com/questions/12670292/get-an-item-from-a-java-set/[Get an item from a Java Set]
 * What is a Pool useful for?
 ** Reducing the number of duplicate values of a specific set of data in memory
-** Reusing references to a shared value (e.g. City) across many instances (e.g. Conference)
 ** JDK Pooling - `String.intern()`, `valueOf()` methods on Boxed Wrappers (`Boolean`, `Short`, `Integer`, `Long`)
 * DataFrame-EC uses Eclipse Collections `UnifiedSet` to pool data for each column
 * We manually pooled the following fields for `Conference` records
@@ -46,5 +45,5 @@
 
 
 link:toc.adoc[⬆️ TOC] /
-link:./16_ce_memory_cost_pooling.adoc[⬅️ Conference Explorer - Memory Cost - Pooling] /
+link:./17_ce_memory_cost_pooling.adoc[⬅️ Conference Explorer - Memory Cost - Pooling] /
 link:./20_rows_vs_columns.adoc[➡️ Rows vs. Columns] 🐢

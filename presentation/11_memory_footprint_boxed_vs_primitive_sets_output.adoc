@@ -38,5 +38,5 @@ org.eclipse.collections.impl.set.mutable.primitive.IntHashSet@626abbd0d footprin
 * *Remember*: Don't box primitive values! Autoboxing is evil and hides memory bloat!
 
 link:toc.adoc[⬆️ TOC] /
-link:./09_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footprint - Boxed vs. Alternative vs. Primitive Sets] /
-link:./11_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable Lists] 🐢
+link:./10_memory_footprint_boxed_vs_primitive_sets.adoc[⬅️ Memory Footprint - Boxed vs. Alternative vs. Primitive Sets] /
+link:./12_mutable_vs_immutable_sets.adoc[➡️ Memory Footprint - Mutable vs. Immutable Lists] 🐢

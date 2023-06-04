@@ -4,10 +4,10 @@
 
 image:assets/conferences_with_pooling.png[Conference Explorer Comparison]
 
-* We didn't change anything with DataFrame-EC
+* It's not the data structures, it's the data! Pooling significantly reduces duplicated data cost.
 * We implemented custom pooling using Eclipse Collections for Collections-based solutions
 * *Recommendation:* Understand your data and analyze using JOL or other heap analysis tools
 
 link:toc.adoc[⬆️ TOC] /
-link:./15_ce_memory_cost_mutable_immutable.adoc[⬅️ Conference Explorer - Memory Cost Comparison - Mutable vs. Immutable] /
-link:./17_what_is_pooling.adoc[➡️ What is Pooling?] 🐢
+link:./16_ce_memory_cost_mutable_immutable.adoc[⬅️ Conference Explorer - Memory Cost Comparison - Mutable vs. Immutable] /
+link:./18_what_is_pooling.adoc[➡️ What is Pooling?] 🐢

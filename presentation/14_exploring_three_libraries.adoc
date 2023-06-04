@@ -1,32 +1,32 @@
-=== What to Choose?
+=== Exploring three libraries
 
 image:assets/lego_stack.jpg[assets/lego_stack.jpg,500,float=right]
 
-==== Java Streams => Lego
+==== Java Streams => Lego (_9+_)
 * Basic building blocks
 * Some assembly required
 * More of the low-level control
-* _Age: 9+_
+* Row-based Domain Objects
 
-==== Eclipse Collections => Lego Technic
+==== Eclipse Collections => Lego Technic (_16+_)
 * More specialized building blocks
 * Performance optimized
 * Still compatible with the basic building blocks
-* _Age: 16+_
+* Row-based Domain Objects
 
-==== DataFrame-EC => Lego Mindstorms
+==== DataFrame-EC => Lego Mindstorms (_10+_)
 * Even more specialized building blocks
 * High-level approach
 * Still compatible with the basic building blocks
 * Can be programmed to accomplish tasks
 * Simplifies some of the tasks that can be harder to achieve otherwise
-* _Age: 10+_
+* Column-based Tabular Data Structure
 
 
 ---
 
 link:toc.adoc[⬆️ TOC] /
-link:./12_sweating_the_small_stuff.adoc[⬅️ Sweating the Small Stuff] /
-link:./14_conference_explorer_class.adoc[➡️ ConferenceExplorer] 🐢
+link:./13_sweating_the_small_stuff.adoc[⬅️ Sweating the Small Stuff] /
+link:./15_conference_explorer_class.adoc[➡️ ConferenceExplorer] 🐢
 
 
