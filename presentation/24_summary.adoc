@@ -10,7 +10,9 @@
 ** Providing support for *smaller integral types* can save additional memory
 * *Domain-oriented Row-based Structures* are more flexible and can be tuned manually
 ** *Immutable data structures* are more memory efficient than their mutable counterparts
-* Code and slides are available here: https://github.com/mehmandarov/java-collection-dataframes-perf
+
+---
+_Code and slides are available here: https://github.com/mehmandarov/java-collection-dataframes-perf_
 
 image:assets/github-link.png[link to presentation,150, float="right"]
 
