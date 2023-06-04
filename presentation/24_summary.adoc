@@ -1,6 +1,7 @@
 === Summary
-
 ---
+image:assets/github-link.png[link to presentation,180, float="right"]
+
 * Data-oriented programming is *feasible*, *flexible*, and *fun* in Java
 * *Understanding and measuring* your data is the key to memory savings
 ** Use *tools* for measuring memory costs (e.g. JOL)
@@ -14,8 +15,6 @@
 
 ---
 _Code and slides are available here: https://github.com/mehmandarov/java-collection-dataframes-perf_
-
-image:assets/github-link.png[link to presentation,150, float="right"]
 
 
 link:toc.adoc[⬆️ TOC] /
