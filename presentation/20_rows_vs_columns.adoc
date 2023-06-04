@@ -2,25 +2,32 @@
 
 ---
 
-* Row-based structures (e.g. Objects in Collections)
-** Advantages
-*** Custom tuning based on understanding of the data
+[width=100%]
+[cols="5a,5a"]
+|====
+| *Row-based structures (e.g. Objects in Collections)*
+| *Column-based structures (e.g. DataFrame)*
+| => *Advantages*
+| => *Advantages*
+| *** Custom tuning based on understanding of the data
 *** Custom pooling and caching possible
-** Challenges
-*** Object header cost per row - 12 bytes
-*** Object alignment cost - 8 bytes
-**** Note: An empty object costs 16 bytes due to object alignment on 64-bit JVM
-**** First reference is free which is why both `EmptyList` and `SingletonList` cost 16 bytes
-*** Article: https://shipilev.net/jvm/anatomy-quarks/24-object-alignment/[Object Alignment] by Aleksey Shipilëv
-* Column-based structures (e.g. DataFrame)
-** Advantages
-*** Object header cost per column
+
+|*** Object header cost per column
 *** Great compression, cache locality and performance especially with primitive arrays
-** Challenges
-*** Tuning limited to available column types
+
+| => *Challenges*
+| => *Challenges*
+
+|*** Object header cost per row - 16 bytes
+*** Object alignment cost - 8 bytes
+**** *Note:* An empty object costs 16 bytes due to object alignment on 64-bit JVM
+**** First reference is free which is why both `EmptyList` and `SingletonList` cost 16 bytes
+
+|*** Tuning limited to available column types
 **** DataFrame-EC currently only has Long value type for integral values
+|====
 
-
+__ *Article:* https://shipilev.net/jvm/anatomy-quarks/24-object-alignment/[Object Alignment] by Aleksey Shipilëv__
 
 link:toc.adoc[⬆️ TOC] /
 link:./18_what_is_pooling.adoc[⬅️ What is Pooling?] /

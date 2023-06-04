@@ -2,7 +2,8 @@
 
 ---
 * Data-oriented programming is *feasible*, *flexible*, and *fun* in Java
-* *Understanding and measuring* your data is key
+* *Understanding and measuring* your data is the key to memory savings
+** Use *tools* for measuring memory costs (e.g. JOL)
 ** *Pooling* can yield the biggest memory savings
 ** *Object compression* is possible using smaller primitive types with fixed number ranges
 * *Column-based Tabular Data* Structures require less custom tuning
