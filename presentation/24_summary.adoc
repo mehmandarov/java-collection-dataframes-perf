@@ -1,0 +1,17 @@
+=== Summary
+
+---
+* Data-oriented programming is feasible, flexible, and fun in Java
+* Understanding and measuring your data is key
+** Pooling can yield the biggest memory savings
+** Object compression is possible using smaller primitive types with fixed number ranges
+* Column-based Tabular Data Structures require less custom tuning
+** Primitive columns generate more memory savings
+** Providing support for smaller integral types can save additional memory
+* Domain-oriented Row-based Structures are more flexible and can be tuned manually
+** Immutable data structures are more memory efficient than their mutable counterparts
+* Code and slides are available here: https://github.com/mehmandarov/java-collection-dataframes-perf
+
+link:toc.adoc[⬆️ TOC] /
+link:./23_the_future_of_java.adoc[⬅️ What will the future bring?] /
+link:./A0_appendix.adoc[➡️ Appendix] 🥷🐢

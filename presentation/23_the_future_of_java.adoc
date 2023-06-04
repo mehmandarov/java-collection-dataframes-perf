@@ -16,4 +16,4 @@ Speaking for memory footprint, there are a few interesting milestones coming up:
 
 link:toc.adoc[⬆️ TOC] /
 link:./22_ce_memory_cost_25_million.adoc[⬅️ DataFrame-EC] /
-link:./29_summary.adoc[➡️ Summary] 🥷
+link:./24_summary.adoc[➡️ Summary] 🥷
