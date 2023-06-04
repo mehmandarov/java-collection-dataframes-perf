@@ -10,4 +10,4 @@ image:assets/conferences_with_pooling.png[Conference Explorer Comparison]
 
 link:toc.adoc[⬆️ TOC] /
 link:./16_ce_memory_cost_mutable_immutable.adoc[⬅️ Conference Explorer - Memory Cost Comparison - Mutable vs. Immutable] /
-link:./18_what_is_pooling.adoc[➡️ What is Pooling?] 🐢
+link:./18_what_is_pooling.adoc[➡️ What is Pooling?] 🥷

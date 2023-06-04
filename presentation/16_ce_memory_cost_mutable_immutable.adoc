@@ -9,4 +9,4 @@ image:assets/conferences_mutable_vs_immutable.png[Conference Explorer Comparison
 
 link:toc.adoc[⬆️ TOC] /
 link:./15_conference_explorer_class.adoc[⬅️ Conference Explorer] /
-link:./17_ce_memory_cost_pooling.adoc[➡️ ConferenceExplorer - Memory Cost - Pooling] 🐢
+link:./17_ce_memory_cost_pooling.adoc[➡️ ConferenceExplorer - Memory Cost - Pooling] 🥷

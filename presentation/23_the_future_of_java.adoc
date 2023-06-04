@@ -5,13 +5,13 @@
 
 Speaking for memory footprint, there are a few interesting milestones coming up:
 
-* Project Lilliput – https://wiki.openjdk.org/display/lilliput
+* *Project Lilliput* – https://wiki.openjdk.org/display/lilliput
 ** _"The goal of this Project is to explore techniques to downsize Java object headers in the Hotspot JVM from 128 bits to 64 bits or less, reducing Java's memory footprint. Improved performance across most, if not all, workloads is also expected."_
-* Project Valhalla
+* *Project Valhalla* - https://openjdk.org/projects/valhalla/
 ** Especially `value objects` – https://cr.openjdk.org/~briangoetz/valhalla/sov/02-object-model.html
 ** _"Like primitives, the value set of an inline class is the set of instances of that class, not object references."_
-* Data Oriented Programming in Java
-, by Brian Goetz: https://www.infoq.com/articles/data-oriented-programming-java/
+* *Project Amber* - https://openjdk.org/projects/amber/
+** *Data Oriented Programming* in Java, by Brian Goetz: https://infoq.com/articles/data-oriented-programming-java/
 
 
 link:toc.adoc[⬆️ TOC] /

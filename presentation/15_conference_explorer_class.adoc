@@ -49,4 +49,4 @@ public class ConferenceExplorer {
 
 link:toc.adoc[⬆️ TOC] /
 link:./14_exploring_three_libraries.adoc[⬅️ Exploring three libraries] /
-link:./16_ce_memory_cost_mutable_immutable.adoc[➡️ Conference Explorer - Memory Cost - Mutable vs. Immutable] 🐢
+link:./16_ce_memory_cost_mutable_immutable.adoc[➡️ Conference Explorer - Memory Cost - Mutable vs. Immutable] 🥷

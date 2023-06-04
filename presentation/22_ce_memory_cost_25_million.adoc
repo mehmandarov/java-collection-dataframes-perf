@@ -4,9 +4,8 @@
 
 image:assets/conferences_memory_25_million.png[Conference Explorer Comparison]
 
-* *Issue:* Out of memory error loading via Jackson CSV
-** Replaced call to `MappingIterator.readAll()` with using as `Iterator` directly
-* *Recommendation:* Understand your data and analyze using JOL to find opportunities for memory savings
+* *Problem:* Out of memory error loading via Jackson CSV
+* *Solution:* Replace call to `MappingIterator.readAll()` using `Iterator` directly
 
 link:toc.adoc[⬆️ TOC] /
 link:./21_ce_memory_fine_tuning.adoc[⬅️ Conference Explorer - Fine Tuning Memory] /

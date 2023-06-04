@@ -1,13 +1,23 @@
 === The problems with in-memory Java architectures circa 2004
 
----
+[width=100%]
+[cols="6a,4a", frame=none, grid=none]
+|====
+|* *Context:* Worked on an in-memory Financial Serices Java application that didn't fit in 32-bit memory space.
 
-* Worked on an in-memory Financial Serices Java application that didn't fit in 32-bit memory space
-** Mission: Fit 6 gigabytes of stuff in 4 gigabytes of space
-** _In the face of overwhelming odds, I'm left with only one option. I'm gonna have to science the $%*# out of this._
-*** -Mark Watney, from _The Martian_
-* Problem: Millions of small `List`, `Set`, `Map` instances created with default sized arrays
-** *Solution*: Roll our own "small size" Java collections
+* *Mission:* Fit 6 gigabytes of stuff in 4 gigabytes of space
+
+* *Problem:* Millions of small `List`, `Set`, `Map` instances created with default sized arrays
+* *Solution*: Roll our own "small size" Java collections
+
+|
+|
+| [quote,Mark Watney,The Martian]
+____
+In the face of overwhelming odds, I'm left with only one option. +
+I'm gonna have to science the $%*# out of this.
+____
+|====
 
 link:toc.adoc[⬆️ TOC] /
 link:./01_intro.adoc[⬅️ Intro] /
