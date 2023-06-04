@@ -27,6 +27,6 @@ image:assets/lego_stack.jpg[assets/lego_stack.jpg,500,float=right]
 
 link:toc.adoc[⬆️ TOC] /
 link:./13_sweating_the_small_stuff.adoc[⬅️ Sweating the Small Stuff] /
-link:./15_conference_explorer_class.adoc[➡️ ConferenceExplorer] 🐢
+link:./15_conference_explorer_class.adoc[➡️ ConferenceExplorer] 🥷
 
 

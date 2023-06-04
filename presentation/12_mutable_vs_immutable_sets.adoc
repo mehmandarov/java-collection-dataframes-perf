@@ -10,10 +10,8 @@
 [source,java,linenums]
 ----
 Set<Integer> jdkMutableSet = new HashSet<>();
-jdkMutableSet.add(1);
-jdkMutableSet.add(2);
+jdkMutableSet.add(1); jdkMutableSet.add(2);
 Set<Integer> jdkImmutableSet = Set.copyOf(jdkMutableSet);
-
 System.out.println(GraphLayout.parseInstance(jdkMutableSet).toFootprint());
 System.out.println(GraphLayout.parseInstance(jdkImmutableSet).toFootprint());
 ----

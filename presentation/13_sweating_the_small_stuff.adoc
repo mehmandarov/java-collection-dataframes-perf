@@ -4,10 +4,10 @@
 
 image:assets/small_immutablelist_cost.png[ImmutableList Comparison]
 
-* *Beware*: Potential tradeoff of memory for performance. JDK balanced optimization to reduce possibility of megamorphic calls. Eclipse Collections saved every possible byte due to 32-bit limits. YMMV.
+* *Beware*: Potential tradeoff of memory for performance. YMMV.
 * *Recommendation*: If you have a lot of small immutable collections, consider using Eclipse Collections
 
 
 link:toc.adoc[⬆️ TOC] /
 link:./12_mutable_vs_immutable_sets.adoc[⬅️ Memory Footprint - Mutable vs. Immutable Sets] /
-link:./14_exploring_three_libraries.adoc[➡️ What to choose?] 🐢
+link:./14_exploring_three_libraries.adoc[➡️ Exploring three libraries] 🐢

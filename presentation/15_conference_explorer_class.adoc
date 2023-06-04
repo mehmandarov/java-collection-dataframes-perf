@@ -44,11 +44,9 @@ public class ConferenceExplorer {
 ----
 |====
 
-* Reads in conferences and countries from two CSV files and filters the data for a specified year
 * We gave https://github.com/mehmandarov/java-collection-dataframes[talks at Devnexus 2023 and Devoxx Greece 2023] on the API and tests for Conference Explorer
-* This talk focuses on the data structures and data and measuring what occupies memory at scale
-* What would it cost to load 1 million conferences into memory? Let's find out!
+* *Question:* What would it cost to load 1 million conferences into memory? Let's find out!
 
 link:toc.adoc[⬆️ TOC] /
-link:./14_exploring_three_libraries.adoc[⬅️ What to Choose? In detail.] /
+link:./14_exploring_three_libraries.adoc[⬅️ Exploring three libraries] /
 link:./16_ce_memory_cost_mutable_immutable.adoc[➡️ Conference Explorer - Memory Cost - Mutable vs. Immutable] 🐢
