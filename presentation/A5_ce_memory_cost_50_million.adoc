@@ -1,0 +1,12 @@
+=== Conference Explorer - Memory Cost - Scaling Conferences x50
+
+---
+
+image:assets/conferences_memory_50_million.png[Conference Explorer Comparison]
+
+* *Problem:* Out of memory error loading via Jackson CSV
+* *Solution:* Replace call to `MappingIterator.readAll()` using `Iterator` directly
+
+link:toc.adoc[⬆️ TOC] /
+link:./A4_caching_vs_pooling.adoc[⬅️ Caching vs. Pooling] /
+link:./toc.adoc[➡️ Table of Contents] 🐢
