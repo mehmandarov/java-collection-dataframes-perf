@@ -1,0 +1,35 @@
+=== Pooling Row Data - Using the Pools
+
+---
+
+[width=100%]
+[cols="10a"]
+|====
+| *Conference Creation*
+|
+[source,java,linenums]
+----
+public Conference(String eventName, String country, String city,
+                  String startDate, String endDate, String sessionTypes,
+                  int trackCount, int sessionCount, int speakerCount, int cost)
+{
+    this(eventName,
+            Country.getByName(country),
+            Pools.poolString(city),
+            Pools.poolTwin(
+                    Tuples.twin(
+                            Pools.poolDate(LocalDate.parse(startDate)),
+                            Pools.poolDate(LocalDate.parse(endDate)))),
+            Pools.poolImmutableList(SessionType.listFromString(sessionTypes)),
+            (byte) trackCount,
+            (short) sessionCount,
+            (short) speakerCount,
+            (short) cost);
+}
+----
+|====
+* *Recommendation:* Pooling can be beneficial once you understand your data. Use it wisely!
+
+link:toc.adoc[⬆️ TOC] /
+link:./19_pooling_row_data_the_pools.adoc[⬅️ Pooling Row Data - The Pools] /
+link:./21_rows_vs_columns.adoc[➡️ Rows vs. Columns] 🐢

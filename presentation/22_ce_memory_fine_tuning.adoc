@@ -9,5 +9,5 @@ image:assets/conferences_tuning.png[Conference Explorer Comparison]
 * *Result:* For EC-List we were able to compress the per-Conference cost from 56 bytes to 40 bytes each
 
 link:toc.adoc[⬆️ TOC] /
-link:./20_rows_vs_columns.adoc[⬅️ Row-based vs. Column-based Structures] /
-link:./22_ce_memory_cost_25_million.adoc[➡️ Conference Explorer - 25 Million Rows] 🐢
+link:./21_rows_vs_columns.adoc[⬅️ Row-based vs. Column-based Structures] /
+link:./23_ce_memory_cost_25_million.adoc[➡️ Conference Explorer - 25 Million Rows] 🐢

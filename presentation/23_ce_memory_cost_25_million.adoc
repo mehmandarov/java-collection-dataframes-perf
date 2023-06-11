@@ -8,5 +8,5 @@ image:assets/conferences_memory_25_million.png[Conference Explorer Comparison]
 * *Solution:* Replace call to `MappingIterator.readAll()` using `Iterator` directly
 
 link:toc.adoc[⬆️ TOC] /
-link:./21_ce_memory_fine_tuning.adoc[⬅️ Conference Explorer - Fine Tuning Memory] /
-link:./23_the_future_of_java.adoc[➡️ What will the future bring?] 🐢
+link:./22_ce_memory_fine_tuning.adoc[⬅️ Conference Explorer - Fine Tuning Memory] /
+link:./24_the_future_of_java.adoc[➡️ What will the future bring?] 🐢

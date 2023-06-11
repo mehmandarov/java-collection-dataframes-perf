@@ -15,5 +15,5 @@ Speaking for memory footprint, there are a few interesting milestones coming up:
 
 
 link:toc.adoc[⬆️ TOC] /
-link:./22_ce_memory_cost_25_million.adoc[⬅️ Conference Explorer - 25 Million Rows] /
-link:./24_summary.adoc[➡️ Summary] 🥷
+link:./23_ce_memory_cost_25_million.adoc[⬅️ Conference Explorer - 25 Million Rows] /
+link:./25_summary.adoc[➡️ Summary] 🥷

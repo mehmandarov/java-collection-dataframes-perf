@@ -31,4 +31,4 @@ __ *Article:* https://shipilev.net/jvm/anatomy-quarks/24-object-alignment/[Objec
 
 link:toc.adoc[⬆️ TOC] /
 link:./18_what_is_pooling.adoc[⬅️ What is Pooling?] /
-link:./21_ce_memory_fine_tuning.adoc[➡️ Conference Explorer - Fine Tuning Memory] 🐢
+link:./22_ce_memory_fine_tuning.adoc[➡️ Conference Explorer - Fine Tuning Memory] 🐢

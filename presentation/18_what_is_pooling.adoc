@@ -46,4 +46,4 @@
 
 link:toc.adoc[⬆️ TOC] /
 link:./17_ce_memory_cost_pooling.adoc[⬅️ Conference Explorer - Memory Cost - Pooling] /
-link:./20_rows_vs_columns.adoc[➡️ Rows vs. Columns] 🐢
+link:./19_pooling_row_data_the_pools.adoc[➡️ Pooling Row Data - The Pools] 🐢
