@@ -1,6 +1,9 @@
+
 === Performance and Scale
 ==== Domain-Oriented Objects vs Tabular Data Structures
 ===== Table of Contents
+
+image:assets/lego.jpg[Title Picture,400, float="right"]
 
 * link:00_title.adoc[Title]
 * link:01_intro.adoc[Introduction]
