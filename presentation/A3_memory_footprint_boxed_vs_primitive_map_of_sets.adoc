@@ -53,5 +53,4 @@ org.eclipse.collections.impl.map.mutable.primitive.LongObjectHashMap@58198813d f
 
 link:toc.adoc[⬆️ TOC] /
 link:./A2_mutable_vs_immutable_lists.adoc[⬅️ Memory Footprint - Mutable vs. Immutable Lists] /
-link:./A4_caching_vs_pooling.adoc[➡️ Caching vs. Pooling
-] 🐢
+link:./A4_caching_vs_pooling.adoc[➡️ Caching vs. Pooling] 🐢
