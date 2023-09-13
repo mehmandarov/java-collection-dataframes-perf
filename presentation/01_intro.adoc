@@ -3,7 +3,7 @@
 ==== Rustam Mehmandarov (link:https://twitter.com/RMehmandarov[@RMehmandarov])  🥷
 * Chief Engineer @ Computas
 * Java Champion (2017)
-* Google Developers Expert (GDE) for Cloud
+* Google Developer Expert (GDE) for Cloud
 * JavaOne Rockstar
 * Community lead
 
