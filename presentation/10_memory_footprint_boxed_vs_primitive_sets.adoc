@@ -22,6 +22,6 @@ System.out.println(GraphLayout.parseInstance(ecPrimitiveSet).toFootprint());
 * *Question*: What is the difference between these three classes?
 
 link:toc.adoc[⬆️ TOC] /
-link:./08_memory_boxed_vs_primitive.adoc[⬅️ Memory Footprint - Boxed vs. Primitive] /
+link:./09_memory_footprint_boxed_vs_primitive.adoc[⬅️ Memory Footprint - Boxed vs. Primitive] /
 link:./11_memory_footprint_boxed_vs_primitive_sets_output.adoc[➡️ Memory Footprint - Boxed vs. Alternative vs. Primitive Sets
 => Output] 🐢
