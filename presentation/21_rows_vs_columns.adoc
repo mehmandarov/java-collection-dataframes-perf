@@ -24,7 +24,8 @@
 **** First reference is free which is why both `EmptyList` and `SingletonList` cost 16 bytes
 
 |*** Tuning limited to available column types
-**** DataFrame-EC currently only has Long value type for integral values
+**** DataFrame-EC currently only has Long and Int value type for integral values
+**** Floats are in the works
 |====
 
 __ *Article:* https://shipilev.net/jvm/anatomy-quarks/24-object-alignment/[Object Alignment] by Aleksey Shipilëv__
