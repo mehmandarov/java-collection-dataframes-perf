@@ -33,7 +33,7 @@
 
     <properties>
         <eclipse.collections.version>13.0.0</eclipse.collections.version>
-        <jackson.version>2.18.9</jackson.version>
+        <jackson.version>2.22.1</jackson.version>
         <dataframe.ec.version>1.4.0</dataframe.ec.version>
         <jtablesaw.version>0.44.4</jtablesaw.version>
         <jol.version>0.17</jol.version>
