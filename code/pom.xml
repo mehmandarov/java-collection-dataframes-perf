@@ -32,7 +32,7 @@
     </modules>
 
     <properties>
-        <eclipse.collections.version>11.1.0</eclipse.collections.version>
+        <eclipse.collections.version>13.0.0</eclipse.collections.version>
         <jackson.version>2.18.9</jackson.version>
         <dataframe.ec.version>0.19.3</dataframe.ec.version>
         <jtablesaw.version>0.43.1</jtablesaw.version>
